@@ -1,0 +1,29 @@
+#content-page {
+  display: flex;
+  width: 70%;
+}
+
+.text {
+  flex: 1;
+  padding: 0;
+  margin: 5%;
+  font-size: 150%;
+}
+
+.paragraph {
+  margin-top: 10%;
+}
+
+.img-column{
+  flex: 1;
+}
+
+.img-column img{
+  width: 70%;
+  float: left;
+  padding: 2% 2% 0 0;
+}
+
+.img-column img:nth-child(even){
+  float: right;
+}

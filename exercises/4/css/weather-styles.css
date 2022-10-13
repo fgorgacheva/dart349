@@ -1,0 +1,32 @@
+
+#information {
+  background-image: url("../images/rainy.jpg");
+}
+
+#content {
+  margin: 0 5% 0 5%;
+  font-family: sans-serif;
+  text-align: right;
+  font-size: 150%;
+  line-height: 250%;
+  width: 70%;
+}
+
+#content h1 {
+  font-family: haunt;
+  font-size: 400%;
+  line-height: 150%;
+  margin-right: 0;
+}
+
+.images{
+  display: flex;
+}
+
+.images img {
+  margin: 2% 1%;
+  width: 20%;
+  height: 300px;
+  border-radius: 5%;
+  object-fit: cover;
+}

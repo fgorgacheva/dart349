@@ -1,0 +1,114 @@
+body,html {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#page  {
+  background-color: #ebdfe1;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  font-family: sans-serif;
+  line-height: 200%;
+  overflow: auto;
+}
+
+#information {
+  background-color: #5C333C;
+  width: 30%;
+  height: 100%;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+#navbar {
+  width: 100%;
+  display: flex;
+  position: static;
+}
+
+#navbar a {
+  background-color: #45262D;
+  width: 25%;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 5% 0 5% 0;
+  transition: 0.5s ease-out 100ms;
+}
+
+#navbar a:hover {
+  background-color: #5C333C;
+  font-size: 120%;
+}
+
+.information-text {
+  text-align: center;
+  padding: 0 10% 0 10%;
+  margin-top: 50%;
+}
+
+.information-text h1 {
+  font-size: 500%;
+  line-height: normal;
+}
+
+.information-text p {
+  text-align: justify;
+  font-size: 110%;
+}
+
+.information-text a {
+  color: white;
+  text-decoration: none;
+}
+
+#content {
+  background-color: #ebdfe1;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-box {
+  display: flex;
+}
+
+.content-text {
+  display: block;
+  flex: 1;
+}
+
+.text {
+  padding: 5%;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.text a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #5C333C;
+}
+
+.text a:hover {
+  font-size: 110%;
+  transition: 0.3s ease-out 0.3s;
+  color: purple;
+}
+
+.img-link{
+  flex: 1;
+  width: 50%;
+}
+
+.img-link img {
+  height: 100%;
+  width: 100%;
+}
