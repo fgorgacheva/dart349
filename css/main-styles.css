@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+@font-face {
+  font-family: "montserrat";
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "raleway";
+  src: url("../fonts/Raleway-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "alegreya";
+  src: url("../fonts/AlegreyaSansSC-thin.ttf");
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/Roboto-Thin.ttf");
+}
+
+@font-face {
+  font-family: "aero";
+  src: url("../fonts/aero.ttf");
+}
+
+@font-face {
+  font-family: "glitch";
+  src: url("../fonts/glitch.otf");
+}
+
+body,html {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+main  {
+  background-color: #0f0f0f;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  font-family: sans-serif;
+  overflow: auto;
+}
+
+.page{
+  width: 100%;
+  height: 100%;
+  /* display: grid;
+  grid-template-rows: 1fr 9fr; */
+  justify-content: center;
+  position: absolute;
+}
+
+/* .bg-img{
+  width: 110%;
+  height: 110%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  transition: ease;
+  background-attachment: fixed;
+} */
+
+nav {
+  box-sizing: border-box;
+  padding: 2% 5%;
+  text-align: center;
+  display: flex;
+  font-family: alegreya;
+}
+
+nav a,
+nav p {
+  flex: 1;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-size: 45px;
+}
+
+nav #section-title {
+  justify-content: start;
+}
+
+nav #project-title{
+  justify-content: end;
+}
+
+nav #home-btn {
+  justify-content: center;
+}
+
+nav #home-btn img {
+  max-width: 6%;
+  border: 6px;
+}
+
+/*Scrollbar-start*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(0deg, rgba(255,0,168,1) 0%, rgba(66,0,255,1) 47%, rgba(0,212,255,1) 100%);
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 20px;
+}
+/*Scrollbar-end*/
