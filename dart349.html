@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="/css/dart-styles.css">
     <link rel="stylesheet" href="/css/glitch.css">
 
+    <script type="text/javascript" src="js/dart.js" ></script>
+
 
     <!-- <script type="text/javascript" src="/js/background-move.js"></script> -->
 
@@ -19,9 +21,17 @@
 
   <body id="dart349-body">
 
-    <div class="background" id="particles-js"></div>
-    <div class="bg-img"></div>
-    <script src="/js/particles.js"></script>
+    <section class="popup">
+      <div class="overlay"></div>
+      <article class="popup-text">
+        <p>
+          Media queries and scrolling behaviour were coded for the final project. The final 
+          project is a horizontal scrolling story. It is functional on mobile but not 
+          perfectly optimized due to the many difficulties built in browser behaviours were 
+          causing.
+        </p>
+      </article>
+    </section>
 
     <div class="page">
       <nav>
@@ -31,22 +41,24 @@
         </a>
         <a id="project-title" href="#">dart349</a>
       </nav>
+      
+      <div class="description-wrapper">
+        <p id="description">This is a list of all exercises and assignments done in the scop of the class DART 349 Introduction to Web Design. It includes small practice as well as the final project proposal and the final project itself along with some descriptions. All designs were made by myself and inspired by subjects that bring me joy!</p>
+      </div>
 
       <section class="content">
-        <p id="description">This is a list of all exercises and assignments done in the scop of the class DART 349 Introduction to Web Design. It includes small practice as well as the final project proposal and the final project itself along with some descriptions. All designs were made by myself and inspired by subjects that bring me joy!</p>
-
         <div class="text-container">
           <article class="assignment-cards" id="first">
               <h1>Website Review</h1>
               <h1>Website Review</h1>
               <h1><a href="/exercises/1/review.pdf" target="_blank">Website Review</a></h1>
-              <!-- <h1>Review Website</h1> -->
           </article>
         </div>
 
         <div class="text-container">
           <article class="assignment-cards">
-            <h1>Review Website</h1>            <h1>Review Website</h1>
+            <h1>Review Website</h1>            
+            <h1>Review Website</h1>
             <h1><a href="/exercises/2/index.html" target="_blank">Review Website</a></h1>
           </article>
         </div>
@@ -75,6 +87,30 @@
           </article>
         </div>
 
+        <div class="text-container">
+          <article class="assignment-cards">
+              <h1>Animations and Transitions</h1>
+              <h1>Animations and Transitions</h1>
+              <h1><a href="./exercises/7/index.html" target="_blank">Animations and Transitions</a></h1>
+          </article>
+        </div>
+
+        <div class="text-container">
+          <article class="assignment-cards" >
+              <h1>Media Queries & Scrolling</h1>
+              <h1>Media Queries & Scrolling</h1>
+              <h1><a href="#" id="popup-btn">Media Queries & Scrolling</a></h1>
+          </article>
+        </div>
+
+        <div class="text-container">
+          <article class="assignment-cards">
+              <h1>Final Project</h1>
+              <h1>Final Project</h1>
+              <h1><a href="./exercises/10 - final/index.html" target="_blank">Final Project</a></h1>
+          </article>
+        </div>
+        
       </section>
 
     </div>

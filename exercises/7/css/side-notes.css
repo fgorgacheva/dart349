@@ -1,0 +1,100 @@
+#notes-body,
+html {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    /* overflow: scroll; */
+}
+
+#bear-chibi{
+    animation: doodle-animation-bear 1s infinite;
+}
+
+#boy-chibi{
+    animation: doodle-animation-boy 1s infinite;
+}
+
+#baby-chibi{
+    animation: doodle-animation-baby 1s infinite;
+}
+
+main{
+    background-color: rgb(195, 211, 245);
+    width: 100%;
+    height: 100%;
+}
+
+.statement-content{
+    overflow-y: scroll;
+}
+
+.chibis, .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.statement-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.chibis {
+    flex-direction: row;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.chibi{
+    width: 5%;
+    margin: 0 2%;
+}
+
+.text-notes {
+    width: 50%;
+    margin-left: 25%;
+    overflow: scroll;
+    flex-direction: column;
+}
+
+.text-notes h1 {
+    font-family: bubbles;
+    font-size: 3em;
+}
+
+.text-notes p,
+.list-container {
+    font-family: nunito;
+    font-size: 1em;
+    text-align: justify;
+}
+
+.links{
+    width: 100%;
+}
+
+.icon{
+    width: 50%;
+    margin: 2% 5%;
+}
+
+.icon:hover{
+    animation: wobble-hor-bottom 2.5s infinite;
+}
+
+.list-container{
+    line-height: 200%;
+}
+
+.ul-a{
+    list-style-type: disc;
+}
+
+.text-notes{
+    /* height: 50%; */
+    overflow: scroll;
+}

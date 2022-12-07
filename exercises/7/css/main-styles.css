@@ -1,0 +1,268 @@
+#story-body,
+html {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.rotation-overlay{
+  display: none;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+}
+
+.bg-img {
+  height: 105%;
+  width: 105%;
+  background: url("../images/backgrounds/forest-cover-min.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+ .top-nav {
+  height: 10%;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  justify-content: end;
+  align-items: center;
+}
+
+.nav-btn{
+  padding: 5% 5% 0 0;
+}
+
+.nav-btn-img{
+  width: 100px;
+  height: 100px;
+}
+
+.nav-btn:hover,
+.info-btn:hover {
+  animation: jello 1s both;
+}
+
+.info-btns {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  justify-content: start;
+  align-items: center;
+}
+
+.info-btn {
+  margin-left: 2%;
+}
+
+.info-img {
+  height: 50px;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  top: 10%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.content div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content h1 {
+  text-align: center;
+  font-family: shalimar;
+  color: white;
+  font-size: 12em;
+  margin: 0;
+  margin-bottom: 10%;
+  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.start-btn {
+  width: 50%;
+  height: 130px;
+  animation: doodle-animation 1s infinite;
+}
+
+.jello {
+  animation: jello 1s both;
+  animation-iteration-count: 1;
+  animation-delay: 1.5s;
+}
+
+.fade-out {
+  animation: fade-out 1s;
+  animation-iteration-count: 1;
+}
+
+.delay-fade-out {
+  animation: fade-out 1s both;
+  animation-iteration-count: 1;
+  animation-delay: 1.5s;
+}
+
+.game-container{
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  background-color: rgb(181, 182, 228);
+}
+
+.scene{
+  flex: 0 0 100vw;
+  position: relative;
+  background-color: pink;
+  width: 100vw;
+  height: 100vh;
+}
+
+.story-board{
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+.scene img {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.char {
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  opacity: 0;
+  /* display: none; */
+  transform: translateY(50px);
+}
+
+.active {
+  opacity: 1;
+  /* display: block; */
+  transform: translateY(0);
+}
+
+.fade-in {
+  animation: fade-in 1s ;
+  animation-fill-mode:forwards;
+  animation-iteration-count: 1;
+}
+
+.displayed {
+  display: block;
+}
+
+.start-btn:hover{
+  width: 55%;
+  height: 150px;
+}
+
+.script-popup{
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.overlay{
+  background-color: rgba(0, 0, 0, 0.527);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.script{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 50%;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: wheat;
+  overflow: scroll;
+  padding: 5%;
+  border-radius: 50px;
+}
+
+.script h1 {
+  font-family: bubbles;
+  font-size: 5em;
+}
+
+.script p {
+  font-family: nunito;
+  font-size: 1em;
+  text-align: justify;
+}
+
+.text-bubble-tl{
+  position: absolute;
+  width: 25%;
+  top: 10%;
+  left: 10%;
+  background-color: wheat;
+  font-family: nunito;
+  font-size: 1.5em;
+  border-radius: 10px;
+}
+
+.text-bubble-br{
+  position: absolute;
+  width: 25%;
+  bottom: 10%;
+  right: 10%;
+  background-color: wheat;
+  font-family: nunito;
+  font-size: 1.5em;
+  border-radius: 10px;
+}
+
+.text-bubble-c{
+  position: absolute;
+  width: 30%;
+  bottom: 15%;
+  left: 37%;
+  background-color: wheat;
+  font-family: nunito;
+  font-size: 1.5em;
+  border-radius: 10px;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5%;
+}

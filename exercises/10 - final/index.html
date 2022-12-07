@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script type="text/javascript" src="./js/background-move.js" ></script>
+    
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/main-styles.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
+
+    <script type="text/javascript" src="./js/general.js" ></script>
+    <title>The Bear and The Bad Words</title>
+  </head>
+  
+  <body id="story-body">
+    <nav class="top-nav">
+      <a href="." class="nav-btn">                <img src="./images/ui/home.png"                 class="nav-btn-img" alt="home bubble button"></a>
+      <a          class="nav-btn" id="music-btn"> <img src="./images/ui/musicOn.png"  id="music"  class="nav-btn-img" alt="music on/off bubble button"></a>
+      <a          class="nav-btn" id="script-btn"><img src="./images/ui/script.png"   id="script" class="nav-btn-img" alt="script bubble button"></a>
+    </nav>
+
+    <!-- Script pop up window -->
+    <section class="script-popup">
+      <div class="overlay"></div>
+      <article class="script">
+        <h1>Script</h1>
+        <p>
+          While he was chopping some wood, the lumberjack heard some sad whimpers coming from a bush nearby <br><br>
+          He leaned over to take a peek and he found out a small baby bear tangled up in some branches. <br><br>
+          Being a nice boy, the lumberjack freed the baby bear. <br><br>
+          To show her gratitude, big mama bear gave the lumberjack a huge bag of bears and a giang jar of honey! <br><br>
+          Like this, the boy and the bear became became good friends! <br><br>
+          She hosted him in her den... <br><br>
+          ...And he invited her in his house! <br><br>
+          "Hey, my bear friend! Everything about you is so great, but your smell is just horrible." said the boy. <br><br>
+          In that moment, her big bear heart sank... <br><br>
+          She tucket her head down, and noticed the hatchet leaning against the wall behind the door. <br><br>
+          "Please pick up this hatchet and hit me on the head with it." <br><br>
+          "What are you saying?" exclaimed the lumberjack. "You are my friend, I could never do such a thing to you!" <br><br>
+          "Please just do it..." insisted the bear. The boy kept refusing, but the bear insisted so much that he ended up agreeing. <br><br>
+          He lifted the hatchet up into the air... <br><br>
+          And hit her on the head with the back of the hatchet. <br><br>
+          The bear cried out in pain and ran away into the forest. <br><br>
+          The summer passed... 
+          Then did the fall... 
+          And so came the winter... <br><br>
+          The boy went back into the forest where they met many times, but never saw his friend again. <br><br>
+          On one good day, the lumberjack had just finished trimming some branches on an overgrown tree when suddenly... <br><br>
+          The bear showed up on the other side of the clearing. <br><br>
+          They recognized eachother and were both so happy to be reunited once again! <br><br>
+          "It's so good to see you again, big bear! Are we going to be friends again like we used to be?" asked the boy. <br><br>
+          "That would depend on you..." <br><br>
+          She cleared out the fur on her head where the wound once was. <br><br>
+          "My my, it healed so well that we can't even tell you were ever hurt!" said the boy. <br><br>
+          "You see? The wound you left from hitting me healed and disappeared, it doesn't even hurt anymore. But the bad words you told me on that day have never left me..." <br><br>
+        </p>
+      </article>
+    </section>
+
+    <div class="main-container">
+      <div class="bg-img"></div>
+
+      <section class="content">
+        <div>
+          <h1>The Bear and <br> the Bad Words</h1>
+          <img class="start-btn"/>
+        </div>
+      </section>
+
+      <nav class="info-btns">
+        <a href="artist-statement.html" class="info-btn"> <img src="./images/ui/statement.png"  class="info-img" alt="artist statement button"></a>
+        <a href="notes.html"            class="info-btn"> <img src="./images/ui/notes.png"      class="info-img" alt="notes button"></a>
+      </nav>
+
+    </div>
+
+    <div class="game-container">
+      <div class="story-board">
+        <!-- While he was chopping some wood, the lumberjack heard some sad whimpers coming from a bush nearby -->
+        <section class="scene">
+          <img class="bg"         src="./images/backgrounds/forest-summer-min.png" />
+          <img class="char"       src="./images/illustrations/boy-axe.png" />
+          <img class="char"       src="./images/illustrations/stump.png" />
+          <img class="char shake" src="./images/illustrations/bush-small.png" /> <!-- jello bush animation -->
+          <div class="text-bubble-tl">
+            <p class="text">While he was chopping some wood, the lumberjack heard some sad whimpers coming from a bush nearby.</p>
+          </div>
+          
+        </section>
+
+        <!-- He leaned over to take a peek and he found out that a small baby bear had gotten tangle up un some branches -->
+        <section class="scene">
+          <img class="bg"         src="./images/backgrounds/forest-in-min.png" />
+          <img class="char"       src="./images/illustrations/boy-surprised.png" />
+          <img class="char"       src="./images/illustrations/cub-caught.png" />
+          <img class="char fade"  src="./images/illustrations/bush-large.png" /> <!-- remove bush animation -->
+          <div class="text-bubble-br">
+            <p class="text">He leaned over to take a peek and he found out a small baby bear tangled up in some branches.</p>
+          </div>
+        </section>
+
+        <!-- Being a nice boy, the lumberjack freed the baby bear. -->
+        <section class="scene">
+          <img class="bg"   src="./images/backgrounds/forest-summer-min.png" />
+          <img class="char" src="./images/illustrations/boy-proud.png" />
+          <img class="char" src="./images/illustrations/mama-cub-happy.png" />
+          <div class="text-bubble-tl">
+            <p class="text">Being a nice boy, the lumberjack freed the baby bear!</p>
+          </div>
+        </section>
+
+        <!-- To show her gratitude, big mama bear gave the lumberjack a huge bag of bears and a giang jar of honey! -->
+        <section class="scene">
+          <img class="bg"         src="./images/backgrounds/forest-summer-min.png" />
+          <img class="char"       src="./images/illustrations/boy-gasp.png" />
+          <img class="char"       src="./images/illustrations/bear-offering.png" />
+          <img class="char shake" src="./images/illustrations/pears-honey.png" />
+          <div class="text-bubble-tl">
+            <p class="text">To show her gratitude, big mama bear gave the lumberjack a huge bag of bears and a giang jar of honey!</p>
+          </div>
+        </section>
+
+        <!-- Like this, the boy and the bear became became good friends! -->
+        <section class="scene">
+          <img class="bg"   src="./images/backgrounds/forest-summer-min.png" />
+          <img class="char" src="./images/illustrations/boy-happy.png" />
+          <img class="char" src="./images/illustrations/bear-baby-happy.png" />
+          <div class="text-bubble-tl">
+            <p class="text">Like this, the boy and the bear became became good friends!</p>
+          </div>
+        </section>
+
+        <!-- She hosted him in her den... -->
+        <section class="scene">
+          <img class="bg"   src="./images/backgrounds/forest-summer-min.png" />
+          <img class="char" src="./images/backgrounds/den-min.png" />
+          <img class="char" src="./images/illustrations/boy-sitting-happy.png" />
+          <img class="char" src="./images/illustrations/bear-baby-den.png" />
+          <div class="text-bubble-tl">
+            <p class="text">She hosted him in her den...</p>
+          </div>
+        </section>
+
+        <!-- And he invited her in his house! -->
+        <section class="scene">
+          <img class="bg"   src="./images/backgrounds/shack-min.png" />
+          <img class="char" src="./images/illustrations/boy-sitting-shack.png" />
+          <img class="char" src="./images/illustrations/bear-happy-sitting.png" />
+          <div class="text-bubble-tl">
+            <p class="text">And he invited her in his house!</p>
+          </div>
+        </section>
+
+        <!-- "Hey, my bear friend! Everything about you is so great, but your smell is just horrible." said the boy. -->
+        <section class="scene">
+          <img class="bg"   src="./images/backgrounds/shack-sofa-min.png" />
+          <img class="char" src="./images/illustrations/boy-neutral-sitting.png" />
+          <div class="text-bubble-tl">
+            <p class="text">"Hey, my bear friend! Everything about you is so great, but your smell is just horrible." said the boy.</p>
+          </div>
+        </section>
+
+        <!-- In that moment, her big bear heart sank... -->
+        <section class="scene">
+          <img class="bg"   src="./images/backgrounds/shack-chair-min.png" />
+          <img class="char" src="./images/illustrations/bear-sad-sitting.png" />
+          <div class="text-bubble-br">
+            <p class="text">In that moment, her big bear heart sank...</p>
+          </div>
+        </section>
+
+        <!-- She tucket her head down, and noticed the hatchet leaning against the wall behind the door. -->
+        <section class="scene">
+          <img class="bg"   src="./images/backgrounds/shack-chair-min.png" />
+          <img class="char" src="./images/illustrations/bear-glancing.png" />
+          <img class="char" src="./images/illustrations/axe.png" />
+          <div class="text-bubble-tl">
+            <p class="text">She tucket her head down, and noticed the hatchet leaning against the wall behind the door.</p>
+          </div>
+        </section>
+
+        <!-- "Please pick up this hatchet and hit me on the head with it." -->
+        <section class="scene">
+          <img class="bg"   src="./images/backgrounds/shack-min.png" />
+          <img class="char" src="./images/illustrations/bear-pointing.png" />
+          <div class="text-bubble-tl">
+            <p class="text">"Please pick up this hatchet and hit me on the head with it."</p>
+          </div>
+        </section>
+
+        <!-- "What are you saying?" exclaimed the lumberjack. "You are my friend, I could never do such a thing to you!" -->
+        <section class="scene">
+          <img class="bg"   src="./images/backgrounds/shack-sofa-min.png" />
+          <img class="char" src="./images/illustrations/boy-sitting-shocked.png" />
+          <div class="text-bubble-tl">
+            <p class="text">"What are you saying?" exclaimed the lumberjack. </p>
+          </div>
+          <div class="text-bubble-br">
+            <p class="text">"You are my friend, I could never do such a thing to you!" </p>
+          </div>
+        </section>
+
+        <!-- "Please just do it..." insisted the bear. The boy kept refusing, but the bear insisted so much that he ended up agreeing.-->
+        <section class="scene">
+          <img class="bg"   src="./images/backgrounds/shack-min.png" />
+          <img class="char" src="./images/illustrations/bear-insist.png" />
+          <div class="text-bubble-tl">
+            <p class="text">"Please just do it..." insisted the bear. The boy kept refusing, but the bear insisted so much that he ended up agreeing.</p>
+          </div>
+        </section>
+
+        <!-- He lifted the hatchet up into the air... -->
+        <section class="scene">
+          <img class="bg"   src="./images/backgrounds/shack-noaxe-min.png" />
+          <img class="char" src="./images/illustrations/lift-axe.png" />
+          <div class="text-bubble-tl">
+            <p class="text">He lifted the hatchet up into the air...</p>
+          </div>
+        </section>
+
+        <!-- And hit her on the head with the back of the hatchet. -->
+        <section class="scene">
+          <img class="bg"   src="./images/backgrounds/shack-noaxe-min.png" />
+          <img class="char" src="./images/illustrations/bear-hurt.png" />
+          <div class="text-bubble-tl">
+            <p class="text">And hit her on the head with the back of the hatchet.</p>
+          </div>
+        </section>
+
+        <!-- The bear cried out in pain and ran away into the forest. -->      
+        <section class="scene">
+          <img class="bg"   src="./images/backgrounds/door-min.png" />
+          <img class="char" src="./images/illustrations/bear-running.png" />
+          <div class="text-bubble-tl">
+            <p class="text">The bear cried out in pain and ran away into the forest.</p>
+          </div>
+        </section>  
+
+        <!-- The summer passed -->
+        <section class="scene">
+          <img class="bg" src="./images/backgrounds/forest-summer-min.png" />  <!-- add particles, or light rays? -->
+          <div class="text-bubble-c">
+            <p class="text">The summer passed...</p>
+          </div>
+        </section>  
+
+        <!-- Then did the fall -->
+        <section class="scene">
+          <img class="bg" src="./images/backgrounds/forest-fall-min.png" /> 
+          <div class="text-bubble-c">
+            <p class="text">...Then did the fall...</p>
+          </div>
+        </section>  
+
+        <!-- And so came the winter... -->
+        <section id="snow" class="scene snow"> <!-- SNOW HERE AND ON -->
+          <img class="bg" src="./images/backgrounds/forest-winter-min.png" />
+          <div class="text-bubble-c">
+            <p class="text">...And so came the winter.</p>
+          </div>
+        </section>  
+
+        <!-- The boy went back into the forest where they met many times, but never saw his friend again. -->
+        <section id="snow" class="scene snow"> 
+          <img class="bg"   src="./images/backgrounds/forest-winter-min.png" />
+          <img class="char" src="./images/illustrations/boy-sad.png" />
+          <div class="text-bubble-br">
+            <p class="text">The boy went back into the forest where they met many times, but never saw his friend again.</p>
+          </div>
+        </section> 
+
+        <!-- On one good day, the lumberjack had just finished trimming some branches on an overgrown tree when suddenly... -->
+        <section id="snow" class="scene snow"> 
+          <img class="bg"   src="./images/backgrounds/forest-winter-min.png" />
+          <img class="char" src="./images/illustrations/ladder.png" />
+          <div class="text-bubble-tl">
+            <p class="text">On one good day, the lumberjack had just finished trimming some branches on an overgrown tree when suddenly...</p>
+          </div>
+        </section>
+
+        <!-- The bear showed up on the other side of the clearing. -->
+        <section class="scene snow">
+          <img class="bg"   src="./images/backgrounds/forest-winter-min.png" />
+          <img class="char" src="./images/illustrations/bear-happy.png" />
+          <div class="text-bubble-tl">
+            <p class="text">The bear showed up on the other side of the clearing.</p>
+          </div>
+        </section>  
+
+        <!-- They recognized eachother and were both so happy to be reunited once again! -->
+        <section class="scene snow">
+          <img class="bg"   src="./images/backgrounds/forest-winter-min.png" />
+          <img class="char" src="./images/illustrations/boy-happy.png" />
+          <img class="char" src="./images/illustrations/bear-smiling.png" />
+          <div class="text-bubble-tl">
+            <p class="text">They recognized eachother and were both so happy to be reunited once again!</p>
+          </div>
+        </section>
+
+        <!-- "It's so good to see you again, big bear! Are we going to be friends again like we used to be?" asked the boy. -->
+        <section class="scene snow">
+          <img class="bg"   src="./images/backgrounds/forest-winter-min.png" />
+          <img class="char" src="./images/illustrations/boy-shy.png" />
+          <img class="char" src="./images/illustrations/bear-smiling.png" />
+          <div class="text-bubble-tl">
+            <p class="text">"It's so good to see you again, big bear! Are we going to be friends again like we used to be?" asked the boy.</p>
+          </div>
+        </section>
+
+        <!-- "That would depend on you..." -->
+        <section class="scene snow">
+          <img class="bg"   src="./images/backgrounds/forest-winter-min.png" />
+          <img class="char" src="./images/illustrations/boy-shy.png" />
+          <img class="char" src="./images/illustrations/bear-idk.png" />
+          <div class="text-bubble-br">
+            <p class="text">"That would depend on you..." </p>
+          </div>
+        </section>
+
+        <!-- She clear out the fur on her head where the wound once was. -->
+        <section class="scene snow">
+          <img class="bg"   src="./images/backgrounds/forest-winter-min.png" />
+          <img class="char" src="./images/illustrations/boy-sad.png" />
+          <img class="char" src="./images/illustrations/bear-pointing-right.png" />
+          <div class="text-bubble-br">
+            <p class="text">She clear out the fur on her head where the wound once was.</p>
+          </div>
+        </section>
+
+        <!-- "My my, it healed so well that we can't even tell you were ever hurt!" said the boy. -->
+        <section class="scene snow">
+          <img class="bg"   src="./images/backgrounds/forest-winter-min.png" />
+          <img class="char" src="./images/illustrations/boy-sad.png" />
+          <img class="char" src="./images/illustrations/bear-sad.png" />  
+          <div class="text-bubble-tl">
+            <p class="text">"My my, it healed so well that we can't even tell you were ever hurt!" said the boy. </p>
+          </div>
+        </section>        
+
+        <!-- "You see? The wound you left from hitting me healed and disappeared, it doesn't even hurt anymore. But the bad words you told me on that day have never left me..." -->
+        <section class="scene snow">
+          <img class="bg"   src="./images/backgrounds/forest-winter-min.png" />
+          <img class="char" src="./images/illustrations/boy-sad.png" />
+          <img class="char" src="./images/illustrations/bear-idk.png" /> 
+          <div class="text-bubble-tl">
+            <p class="text">"You see? The wound you left from hitting me healed and disappeared, it doesn't even hurt anymore. </p>
+          </div>
+          <div class="text-bubble-br">
+            <p class="text">But the bad words you told me on that day have never left me..."</p>
+          </div>
+        </section>
+
+        <!-- MORAL OF THE STORY  -->
+        <section class="scene snow">
+          <img class="bg" src="./images/backgrounds/forest-winter-min.png" />
+          <div class="text-bubble-c">
+            <p class="text">Body wounds heal and disappear, but heart wounds do not always disappear as easily and can still hurt for a long time. We should always be mindful of the things that we say and the way we say them. We shouldn't hurt the ones we love and care about!</p>
+          </div>
+        </section>
+
+        </div>
+        
+    </div>
+    <div class="rotation-overlay">
+      <p>Please rotate your device!</p>
+    </div>
+    <script type="text/javascript" src="./js/snow.js" ></script>
+  </body>
+</html>

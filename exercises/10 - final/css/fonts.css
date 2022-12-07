@@ -1,0 +1,19 @@
+@font-face{
+    font-family: bubbles;
+    src: url("../fonts/FuzzyBubbles-Regular.ttf");
+}
+
+@font-face{
+    font-family: inconsolata;
+    src: url("../fonts/Inconsolata-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face{
+    font-family: nunito;
+    src: url("../fonts/Nunito-VariableFont_wght.ttf");
+}
+
+@font-face{
+    font-family: shalimar;
+    src: url("../fonts/Shalimar-Regular.ttf");
+}
