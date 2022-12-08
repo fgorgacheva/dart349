@@ -16,7 +16,7 @@ addEventListener('DOMContentLoaded', (event) => {
 
     musicBtn?.addEventListener('click', (event) => {
         if(musicOn){
-            musicBtn.src = "./images/ui/musicOff.PNG";
+            musicBtn.src = "./images/ui/musicOff.png";
             music.pause();
         }
         else{
