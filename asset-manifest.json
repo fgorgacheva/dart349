@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.efe1eddf.css",
+    "main.js": "/static/js/main.4820ff30.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/ux-glass-clear.png": "/static/media/ux-glass-clear.fd76eed298d41857260e.png",
+    "static/media/3D-glass-clear.png": "/static/media/3D-glass-clear.c4d1431af0da354a7ee3.png",
+    "static/media/Montserrat-VariableFont_wght.ttf": "/static/media/Montserrat-VariableFont_wght.3faa3eef13649db02044.ttf",
+    "static/media/misc.png": "/static/media/misc.3679aae7fb5594c94496.png",
+    "static/media/Nunito-VariableFont_wght.ttf": "/static/media/Nunito-VariableFont_wght.dfb4cccee93ebd67ae5c.ttf",
+    "index.html": "/index.html",
+    "static/media/arrow-scroll-down.svg": "/static/media/arrow-scroll-down.8374e63c0334336cd6275a324abe39b0.svg",
+    "main.efe1eddf.css.map": "/static/css/main.efe1eddf.css.map",
+    "main.4820ff30.js.map": "/static/js/main.4820ff30.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.efe1eddf.css",
+    "static/js/main.4820ff30.js"
+  ]
+}
