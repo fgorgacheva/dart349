@@ -40,7 +40,7 @@ export const Project = ({ }: Props) => {
             <Main>
 
                 <Cover>
-                    <Image src={`/images/projects/${type}/${alias}/${project.cover}`} width='100%' height='100%'></Image>
+                    <Image src={`/images/projects/${type === "ux" ? type.toLocaleUpperCase() : type}/${alias}/${project.cover}`} width='100%' height='100%'></Image>
                 </Cover>
 
                 <Header>
@@ -48,7 +48,7 @@ export const Project = ({ }: Props) => {
                     <Text fontSize="30px" fontFamily="montserrat" padding="0 0 50px 0"><span>{project.title}</span></Text>
                     <Icons>
                         {project.apps?.map(icon =>
-                            <Image src={`/images/projects/${type}/${icon}`} width='35px' height='35px'></Image>
+                            <Image src={`/images/projects/${type === "ux" ? type.toLocaleUpperCase() : type}/${icon}`} width='35px' height='35px'></Image>
                         )}
                     </Icons>
                 </Header>

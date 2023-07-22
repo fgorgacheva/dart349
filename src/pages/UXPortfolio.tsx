@@ -54,19 +54,19 @@ class UXPortfolio extends React.Component<UXPortfolioProps, UXPortfolioState> {
                     <Collection>
                         <RoundedBox href="/ux/project/this" shadow='0px 10px 15px -3px rgba(0,0,0,0.1)'>
                             <FeaturedProject>
-                                <Image src={`/images/projects/ux/this/${UXProjects['this'].thumbnail || ""}`}></Image>
+                                <Image src={`/images/projects/UX/this/${UXProjects['this'].thumbnail || ""}`}></Image>
                                 <Text fontSize="30px" fontFamily="montserrat" >{UXProjects['this'].title}</Text>
                             </FeaturedProject>
                         </RoundedBox>
                         <RoundedBox href="/ux/project/neptronic" shadow='0px 10px 15px -3px rgba(0,0,0,0.1)'>
                             <FeaturedProject>
-                                <Image src={`/images/projects/ux/neptronic/${UXProjects['neptronic'].thumbnail || ""}`}></Image>
+                                <Image src={`/images/projects/UX/neptronic/${UXProjects['neptronic'].thumbnail || ""}`}></Image>
                                 <Text fontSize="30px" fontFamily="montserrat">{UXProjects['neptronic'].title}</Text>
                             </FeaturedProject>
                         </RoundedBox>
                         <RoundedBox href="/ux/project/avatar-project" shadow='0px 10px 15px -3px rgba(0,0,0,0.1)'>
                             <FeaturedProject>
-                                <Image src={`/images/projects/ux/avatar-project/${UXProjects['avatar-project'].thumbnail || ""}`}></Image>
+                                <Image src={`/images/projects/UX/avatar-project/${UXProjects['avatar-project'].thumbnail || ""}`}></Image>
                                 <Text fontSize="30px" fontFamily="montserrat">{UXProjects['avatar-project'].title}</Text>
                             </FeaturedProject>
 
