@@ -95,6 +95,7 @@ const BackgroundImg = styled.div`
   height: 100vh;
 
   background-image: url('/images/background.png');
+  background-size: cover;
   position: fixed;
   z-index: -1;
   top: 0;
