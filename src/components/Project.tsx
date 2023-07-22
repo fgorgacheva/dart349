@@ -60,7 +60,7 @@ export const Project = ({ }: Props) => {
 
                 {project.extraImages && <Carousel numImg={project.extraImages.length} >
                     {project.extraImages.map(src => {
-                        return <Image src={`/images/projects/${type}/${alias}/${src}`} />
+                        return <Image src={`/images/projects/${type === "ux" ? type.toLocaleUpperCase() : type}/${alias}/${src}`} />
                     })}
                 </Carousel>}
 
