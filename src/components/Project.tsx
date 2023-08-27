@@ -85,7 +85,7 @@ export const Project = ({ }: Props) => {
 
                     })
                 }
-                {project.description && <Text fontSize="18px" fontFamily="nunito" padding='30px 0'>{project.description}</Text>}
+                {project.description && <Text fontSize="18px" fontFamily="nunito" padding='30px 15%'>{project.description}</Text>}
 
             </Main >}</>
     )
@@ -131,10 +131,10 @@ const Cover = styled.div`
         `;
 
 const Carousel = styled.div<{ numImg: number }>`
-        width: 100%;
-
+        width: 70%;
+        margin: 0px 15%;
         display: grid;
-        grid-template-columns: ${p => `repeat(${p.numImg}, 1fr)`};
+        grid-template-columns: ${p => p.numImg > 3 ? `repeat(3, 1fr)` : `repeat(${p.numImg}, 1fr)`};
         gap: 15px;
         img{
             width: 100%;

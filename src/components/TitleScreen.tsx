@@ -15,7 +15,7 @@ export class TitleScreen extends Component<Props, State> {
     return (
       <Main>
         <Name>Felicia Gorgacheva</Name>
-        <Role>multimedia designer and artist</Role>
+        <Role>UX designer & 3D artist</Role>
         <Arrow src={scroll}></Arrow>
       </Main>
     )

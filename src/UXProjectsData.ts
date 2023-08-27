@@ -4,7 +4,7 @@ export const UXProjects: {[key: string]: Project} = {
 
 "this": {
         "date": "July 2023",
-        "title": "The Bubblefolio",
+        "title": "The Library",
         "cover": "bubbles.png",
         "thumbnail": "bubble.png",
         "brief": "In this case study, I explore the details of my virtual library's design process, sharing insights and lessons from my creative journey. Using Procreate for sketching and Figma for design, I ultimately developed it using React JS.",

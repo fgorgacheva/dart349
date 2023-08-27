@@ -29,26 +29,20 @@ export class Map extends Component<Props, State> {
 
           <LeftSection>
             {/* about me */}
-            <RoundedBox padding="0px 30px" href="" flexDirection='column'>
+            <RoundedBox padding="0px 30px" flexDirection='column'>
+              {/* <TextContainer> */}
               <Text padding='20px 0' fontSize='25px'>Explore and learn more about <span>me</span> and my <span>work</span>!</Text>
-              <Text fontSize='20px'>I specialize in UX Design and 3D modeling and I love cats!</Text>
-              <Image src="/images/decoration/bobacat-spill.png" width='100%' />
+              <Text fontSize='20px'>I specialize in UX Design, I have a passion for 3D modeling and I love cats!</Text>
+              <Image src="/images/decoration/bobacat-spill.png" width='75%' height='50%' />
+              {/* </TextContainer> */}
+
             </RoundedBox>
-            <BottomHalf>
-              {/* cv button */}
+            {/* <BottomHalf>
               <RoundedBox padding="10px" href="/ux/project/this" center>
                 <Image src="/images/icons/about.png" width='5vh' />
-                <Text fontSize="20px" fontWeight='800' padding='10px 0 0 0'></Text>
+                <Text fontSize="20px" fontWeight='400' padding='10px 0 0 0'>Hey</Text>
               </RoundedBox>
-              {/* contact button */}
-              <RoundedBox padding="15px" href="/" hash='contact'>
-                <Icons>
-                  <img src="/images/icons/mail1.png" alt="" />
-                  <img src="/images/icons/linkedin1.png" alt="" />
-                  <img src="/images/icons/github1.png" alt="" />
-                </Icons>
-              </RoundedBox>
-            </BottomHalf>
+            </BottomHalf> */}
           </LeftSection>
 
           <CenterSection>
@@ -58,34 +52,17 @@ export class Map extends Component<Props, State> {
 
           <RightSection>
             {/* Ux  */}
-            <MapMenuButton invert={true}
-              topMenuButton={<RoundedBox padding='15px' href="" center>
-                <Text fontSize={"20px"}>Portfolio</Text>
-              </RoundedBox>}
-              bottomMenuButton={<RoundedBox padding='15px' href="/ux" center>
-                <Text fontSize={"20px"}>Gallery</Text>
-              </RoundedBox>}
-              onClick={() => { }} center={true}>
+            <RoundedBox href="/ux/portfolio">
               <ButtonImage src={UxIcon} />
-            </MapMenuButton>
+            </RoundedBox>
             {/* 3d */}
-            <MapMenuButton invert={false}
-              topMenuButton={<></>
-                // <RoundedBox padding='15px' href="" center>
-                //   <Text fontSize={"20px"}>Portfolio</Text>
-                // </RoundedBox>
-              }
-              bottomMenuButton={<RoundedBox padding='15px' href="/3d" center>
-                <Text fontSize={"20px"}>Gallery</Text>
-              </RoundedBox>}
-              onClick={() => { }} center={true}>
+            <RoundedBox href="/3d">
               <ButtonImage src={ThreeDGlassIcon} />
-            </MapMenuButton>
+            </RoundedBox>
             {/* misc */}
-            <MapMenuButton topMenuButton={<></>}
-              bottomMenuButton={<></>} onClick={() => { }} center={true}>
+            <RoundedBox href="/misc">
               <ButtonImage src={MiscIcon} />
-            </MapMenuButton>
+            </RoundedBox>
           </RightSection>
         </MainGrid>
 
@@ -93,38 +70,42 @@ export class Map extends Component<Props, State> {
           <Text fontSize='30px' padding='0 0 15px 0'><span>Contact</span> me!</Text>
           <ContactContainer >
             <RoundedBox height="100%" padding={"0"}>
-              <Links>
-                <StyledLink href="mailto:fgorgacheva@gmail.com">
-                  <img src="/images/icons/mail1.png" alt="" />
-                  <Text fontSize='20px'>fgorgacheva@gmail.com</Text>
-                </StyledLink>
-                <StyledLink target='_blank' rel='noopener noreferrer' href="https://linkedin.com/in/fgorgacheva">
-                  <img src="/images/icons/linkedin1.png" alt="" />
-                  <Text fontSize='20px'>in/fgorgacheva</Text>
-                </StyledLink>
-                <StyledLink target='_blank' rel='noopener noreferrer' href="https://github.com/fgorgacheva">
+              <InnerContactContainer>
+                <Links>
+                  <StyledLink href="mailto:fgorgacheva@gmail.com">
+                    <img src="/images/icons/mail1.png" alt="" />
+                    <Text fontSize='20px'>fgorgacheva@gmail.com</Text>
+                  </StyledLink>
+                  <StyledLink target='_blank' rel='noopener noreferrer' href="https://linkedin.com/in/fgorgacheva">
+                    <img src="/images/icons/linkedin1.png" alt="" />
+                    <Text fontSize='20px'>in/fgorgacheva</Text>
+                  </StyledLink>
+                  {/* <StyledLink target='_blank' rel='noopener noreferrer' href="https://github.com/fgorgacheva">
                   <img src="/images/icons/github1.png" alt="" />
                   <Text fontSize='20px'>/fgorgacheva</Text>
-                </StyledLink>
-              </Links>
-              <JijiDiv>
+                </StyledLink> */}
+                </Links>
+                {/* <JijiDiv>
                 <JijiImage src='/images/decoration/bobacat-stack.png' height="100%" />
-              </JijiDiv>
+              </JijiDiv> */}
+                <BobaDiv>
+                  <RoundedBox center>
+                    <Image src='/images/decoration/bobacat.png' height='100%' width='100%' />
 
+                  </RoundedBox>
+                </BobaDiv>
+
+              </InnerContactContainer>
             </RoundedBox>
 
-            <BobaDiv>
-              <RoundedBox center>
-                <Image src='/images/decoration/bobacat.png' height='100%' width='100%' />
 
-              </RoundedBox>
-            </BobaDiv>
+
           </ContactContainer>
 
 
         </Contact>
 
-      </Main>
+      </Main >
     )
   }
 }
@@ -159,10 +140,11 @@ const Brief = styled.h1`
 const MainGrid = styled.div`
   height: 40vh;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 8%;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0,1fr));
+  grid-template-columns: repeat(2, minmax(300px,1fr)) minmax(50px,1fr);
+  grid-template-rows: minmax(0,1fr);
 `;
 
 // Left Styles ---------------------------------------------------------
@@ -170,12 +152,17 @@ const MainGrid = styled.div`
 const LeftSection = styled.div`
   height: 100%;
   width: 100%;
-  display: grid;
-  grid-column: 1 1/2;
-  grid-row: 1 1;
   row-gap: 15px;
+  display: grid;
+  grid-template-columns: minmax(0,1fr);
+  grid-template-rows: minmax(0,1fr);
   justify-content: center;
   align-items: center;
+
+  img{
+    object-fit: contain;
+    margin: auto;
+  }
 `;
 
 const Icons = styled.div`
@@ -221,10 +208,16 @@ const RightSection = styled.div`
   height: 100%;
   width: 100%;
   align-items: center;
-  grid-gap: 20px;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0,1fr));
-  grid-template-rows:   minmax(0,1fr);
+  grid-gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  justify-content: space-evenly;
+
+  div {
+    width: 125px;
+    height: 125px;
+  }
 `;
 
 const ButtonImage = styled.img`
@@ -238,24 +231,25 @@ const ButtonImage = styled.img`
 // Contact Styles -----------------------------------------------------------
 
 const Contact = styled.div`
-  padding-top: 30vh;
+  padding-top: 5vh;
   padding-bottom: 10vh;
+  
+  min-width: 500px;
+  width: 50%;
 `;
 
 const ContactContainer = styled.div`
-  
   display: grid;
-  grid-template-columns: minmax(0,4fr) minmax(0,200px);
+  grid-template-columns: minmax(0,4fr);
   column-gap: 20px;
   grid-template-rows: minmax(0,1fr);
-  height: 300px;
   position: relative;
 `;
 
 const Links = styled.div`
-  padding: 20px 20px;
   width: 100%;
   display: flex;
+  flex-direction: column;
   grid-gap: 5%;
   flex-wrap: wrap;
 `;
@@ -263,7 +257,7 @@ const Links = styled.div`
 const StyledLink = styled.a`
   align-items: center;
   display: grid;
-  grid-template-columns: 0.5fr 2fr;
+  grid-template-columns: minmax(0,.5fr) minmax(0,2fr);
   text-decoration: none;
   img{
     width: 40px;
@@ -291,7 +285,27 @@ const JijiDiv = styled.div`
 `
 
 const BobaDiv = styled.div`
-img{
-  object-fit: contain
-}
+  img{
+    width: 100%;
+    object-fit: contain
+  }
+`
+
+const InnerContactContainer = styled.div`
+  display: grid;
+  width: 100%;
+  padding: 20px;
+  grid-template-columns: minmax(0,1fr) minmax(0,150px);
+  grid-template-rows: minmax(0,1fr);
+`
+
+const TextContainer = styled.div`
+  height:100%;
+  display: grid;
+  grid-template-columns: minmax(0,1fr);
+  grid-template-rows: repeat(3, minmax(0,1fr));
+
+  img {
+    object-fit: contain
+  }
 `
