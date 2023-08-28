@@ -26,12 +26,12 @@ class UXPortfolio extends React.Component<UXPortfolioProps, UXPortfolioState> {
                             <RoundedBox height="fit-content" width="fit-content" padding="15px" href="">
                                 <a target="_blank" style={{ textDecoration: 'none' }} href="/files/FGorgacheva_UX_CV_2023.pdf">
 
-                                    <Text fontSize="15px" fontFamily="montserrat">CV</Text>
+                                    <Text fontSize="15px" fontFamily="montserrat" fontWeight="700">CV</Text>
                                 </a>
                             </RoundedBox>
-                            <RoundedBox height="fit-content" width="fit-content" padding="15px" href="/ux">
+                            {/* <RoundedBox height="fit-content" width="fit-content" padding="15px" href="/ux">
                                 <Text fontSize="15px" fontFamily="montserrat">GALLERY</Text>
-                            </RoundedBox>
+                            </RoundedBox> */}
                         </BtnGroup>
                     </Header>
                     <RoundedBox padding="20px">
@@ -43,9 +43,9 @@ class UXPortfolio extends React.Component<UXPortfolioProps, UXPortfolioState> {
                     <Text fontSize="30px" fontFamily="montserrat" padding="50px 0 10px 0">Creative <span>Statement</span>
                     </Text>
                     <Text fontSize="20px" fontWeight="">
-                        In our ever-rising digital society, user experience grows exponentially. It began with "The Design of Everyday Things" where Don Norman explained and ephasized the importance of the objects of our corporeal world bearing high importance. Now let's imagine an entire universe we can't touch or manipulate other than with tools and pixels on a screen. The majority of tools we use, processes we must complete, our entertainment we use, are nearly all digital: banking, messaging, picking movies, playing games, etc. More and more home appliances have screens too now: thermostats, toasters, fridges, even stoves, to name a few!
-                        <br></br><br></br>The more things we have to deal with, the more we have to navigate. This is the most crucial point where understanding the sheer significance of UX design is crucial. If in a day, we have to sort out our bills, send a few emails, make a some calls, then go to the kitchen to use the screen on the fridge, maybe lower the temperature in the house because it's a little too hot, get back to the screen on the stove, and finally perhaps watch something while we finish our meal, isn't it crucial for us as users to be able to deal with this panoply of applications and displays as effectively as possible?
-                        <br></br><br></br>I believe so, and with my drive and determination, I want to help create this world of easy, simple, and modern designs that will surround us to improve our user experience with the "new" every day things. My design ideology stands with "Don't Make Me Think!" by Steve Krug, a book that my design professor recommended and made everything make sense. I will contribute to our digital world, one design at a time!
+                        In our ever-rising digital society, user experience grows exponentially. It began with "The Design of Everyday Things" where Don Norman explained and emphasized the importance of the design of the objects of our corporeal world. Now let's imagine an entire universe we can't touch or manipulate other than with tools and pixels on a screen. The majority of tools we use, processes we must complete, even our entertainment, are nearly all digital: banking, messaging, picking movies, playing games, etc. More and more home appliances have screens too now: thermostats, toasters, fridges, even stoves, to name a few!
+                        <br></br><br></br>The more things we have to deal with, the more we have to navigate. This is the most important point where understanding the sheer significance of UX and interaction design is crucial. If in a day, we have to sort out our bills, send a few emails, make a some calls, then go to the kitchen to use the screen on the fridge, maybe lower the temperature in the house because it's a little too hot, get back to some screen in the kitchen, and finally perhaps watch something while we finish our meal, isn't it key for us as users to be able to deal with this panoply of applications and displays as effectively as possible?
+                        <br></br><br></br>I believe so, and with my drive and determination, I want to add to this world of easy, simple, and modern designs that will surround us to improve our user experience with the "new" every day things. My design ideology stands with "Don't Make Me Think!" by Steve Krug, a book that my design professor recommended and made everything make sense. I am determined to contribute to our digital world, one design at a time!
 
                     </Text>
 

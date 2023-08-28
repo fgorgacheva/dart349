@@ -140,7 +140,7 @@ const Brief = styled.h1`
 const MainGrid = styled.div`
   height: 40vh;
   align-items: center;
-  margin-top: 8%;
+  margin-top: 5%;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, minmax(300px,1fr)) minmax(50px,1fr);
@@ -231,7 +231,7 @@ const ButtonImage = styled.img`
 // Contact Styles -----------------------------------------------------------
 
 const Contact = styled.div`
-  padding-top: 5vh;
+  padding-top: 10vh;
   padding-bottom: 10vh;
   
   min-width: 500px;
