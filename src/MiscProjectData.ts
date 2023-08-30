@@ -3,12 +3,12 @@ export const MiscProjects: {[key: string]: Project} = {
 "musou-no-hitotachi": {
     "date": "August, 2023",
     "title": "Musou No Hitotachi",
-    "cover": "raiden1.png",
+    "cover": "cover.jpg",
     "brief": "From the game Genshin Impact, this sword is the God of Electro's very own. As a divine weapon imbued with the power of electro thus glowing a bright shade of purple.",
     "description": "Raiden Shogun's sword, the \"Musou No Hitotachi\", from the game Genshin Impact. 3D remodeled, printed, painted, and decorated. I really wanted to bring to life the essence of the God and her element and I wanted her sword to be eye catching. I bought an .stl model from Etsy and entirely remodeled the inside to allow space for an LED strip, and redesigned the part attachment system. In the hilt, I made space for a round battery to which the LED strip would be connected.\n\n\
                     Once modeled and after printing a few test pieces, I printed the two hilt parts together which took about 3 days, followed by the three blade parts which took about 2 days all with 100% density on the highest quality using the Ender 3v2 printer. Once printed, I took off all the supports and sanded with a dremmel followed by very fine (800-200 grit) sandpaper to smooth the surface and got painting. I first painted the hilt separately because of house much I needed to manipulate and rotate the pieces. Once those were done, I put the whole sword together by inserting the LED strip all the way in and glueing each piece to the next. First time working with hsuch big PLA printed parts and everything was surprisingly easy to work with. The Krazy glue did wonders, and as the PLA is transparent, the seems and male/female attachments are barely visible! I then painted the details of the blade and finally spray painted it with a sealing glossy clear coat.\n\n\
                     The final result is a very sturdy sword with a battery powered LED that can be turned on and off via controller. Even the colors can change!",
-    "extraImages": ["print.png", "sand-progress.png", "full-off.png", "full-on.png"],
+    "extraImages": ["print.png", "sand-progress.png", "full-off.png", "cosplay.jpg", "game-reference.jpg", "full-on.png"],
     "apps": ["blender.svg"]
 },
 
