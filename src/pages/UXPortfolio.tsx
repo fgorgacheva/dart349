@@ -42,7 +42,7 @@ class UXPortfolio extends React.Component<UXPortfolioProps, UXPortfolioState> {
 
                     <Text fontSize="30px" fontFamily="montserrat" padding="50px 0 10px 0">Creative <span>Statement</span>
                     </Text>
-                    <Text fontSize="20px" fontWeight="">
+                    <Text fontSize="18px" fontWeight="">
                         In our ever-rising digital society, user experience grows exponentially. It began with "The Design of Everyday Things" where Don Norman explained and emphasized the importance of the design of the objects of our corporeal world. Now let's imagine an entire universe we can't touch or manipulate other than with tools and pixels on a screen. The majority of tools we use, processes we must complete, even our entertainment, are nearly all digital: banking, messaging, picking movies, playing games, etc. More and more home appliances have screens too now: thermostats, toasters, fridges, even stoves, to name a few!
                         <br></br><br></br>The more things we have to deal with, the more we have to navigate. This is the most important point where understanding the sheer significance of UX and interaction design is crucial. If in a day, we have to sort out our bills, send a few emails, make a some calls, then go to the kitchen to use the screen on the fridge, maybe lower the temperature in the house because it's a little too hot, get back to some screen in the kitchen, and finally perhaps watch something while we finish our meal, isn't it key for us as users to be able to deal with this panoply of applications and displays as effectively as possible?
                         <br></br><br></br>I believe so, and with my drive and determination, I want to add to this world of easy, simple, and modern designs that will surround us to improve our user experience with the "new" every day things. My design ideology stands with "Don't Make Me Think!" by Steve Krug, a book that my design professor recommended and made everything make sense. I am determined to contribute to our digital world, one design at a time!
@@ -74,9 +74,6 @@ class UXPortfolio extends React.Component<UXPortfolioProps, UXPortfolioState> {
                     </Collection>
 
                 </Main>
-
-
-
             </ContentContainer>);
     }
 }
@@ -85,7 +82,7 @@ export default UXPortfolio;
 
 const Main = styled.div`
     width: 100%;
-    padding: 5%;
+    padding: 5% 10%;
     text-align: left;
     
 `;
@@ -93,8 +90,6 @@ const Main = styled.div`
 const Header = styled.div`
     display: grid;
     grid-template-columns: 1fr 2fr;
-
-    
 `;
 
 const Collection = styled.div`
