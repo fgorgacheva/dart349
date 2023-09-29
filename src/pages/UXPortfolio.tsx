@@ -98,7 +98,7 @@ class UXPortfolio extends React.Component<UXPortfolioProps, UXPortfolioState> {
                     {/* Skills */}
                     <Skills>
                         <Text fontSize="25px" fontFamily="montserrat" fontWeight="400" color="#C092F9">SKILLS</Text>
-                        <Text fontSize="20px" fontFamily="montserrat" fontWeight="400" color="#918CAB">&nbsp;<br></br>UI | UX&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;Interaction Design&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;Figma&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;Adobe XD&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;Front-End Development (HTML, CSS, JS)&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;OOP <br></br> English  Fluent&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;French Proficient&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;Bulgarian Native</Text>
+                        <Text fontSize="20px" fontFamily="montserrat" fontWeight="400" color="#918CAB">&nbsp;<br></br>UI | UX&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;Interaction Design&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;Figma&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;Adobe XD&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;Front-End Development (HTML, CSS, JS)&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;OOP <br></br> English  Fluent&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;French Fluent&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;Bulgarian Native</Text>
                     </Skills>
                 </Details>
 
