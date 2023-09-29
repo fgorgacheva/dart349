@@ -81,7 +81,7 @@ class UXPortfolio extends React.Component<UXPortfolioProps, UXPortfolioState> {
 
                         <table>
                             <tr>
-                                <td><Text fontSize="20px" fontFamily="montserrat" fontWeight="400" color="#918CAB">Neptronic - UI | UX Contract</Text></td>
+                                <td><Text fontSize="20px" fontFamily="montserrat" fontWeight="400" color="#918CAB">Neptronic - UI | UX Part-Time</Text></td>
                                 <td><Text fontSize="20px" fontFamily="montserrat" fontWeight="400" color="#918CAB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;2021 - 2023</Text></td>
                             </tr>
                             <tr>
