@@ -92,7 +92,6 @@ export const Project = ({ }: Props) => {
 }
 
 const Main = styled.div`
-        width: calc(100vw - 150px);
         padding: 5% 10%;
         text-align: left;
         `;

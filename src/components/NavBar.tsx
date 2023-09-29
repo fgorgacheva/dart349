@@ -20,7 +20,7 @@ export class NavBar extends Component<Props, State> {
           <p>{this.props.title}</p>
         </Pearl>
 
-        <NavIcon href="/" url="/images/icons/home.svg"></NavIcon>
+        <NavIcon href="/" url="/images/icons/home.svg">asd</NavIcon>
         <NavIcon href="/ux/portfolio" url="/images/icons/UX.svg"></NavIcon>
         <NavIcon href="/3D" url="/images/icons/3D.svg"></NavIcon>
         <NavIcon href="/misc" url="/images/icons/misc.svg"></NavIcon>

@@ -21,7 +21,6 @@ const Main = styled.div`
   /* background-color: #EAECF4; */
   /* background-image: url('/images/background.png'); */
 
-  width: calc(100vw - 150px);
   
   display: flex;
   flex-direction: column;

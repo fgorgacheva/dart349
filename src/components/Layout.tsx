@@ -11,6 +11,7 @@ import UXPortfolio from "../pages/UXPortfolio";
 import { NotFound } from "../pages/NotFound";
 import { isMobile } from 'react-device-detect';
 import Text from "./Text";
+import { HorizontalNavBar } from "./HorizontalNavBar";
 interface LayoutProps {
 
 }
@@ -30,7 +31,7 @@ const Layout = ({ }) => {
                 const id = hash.replace('#', '');
                 const element = document.getElementById(id);
                 if (element) {
-                    element.scrollIntoView(false);
+                    element.scrollIntoView({ behavior: 'smooth' })
                 }
             }, 0);
         }
@@ -53,11 +54,14 @@ const Layout = ({ }) => {
             break;
     }
 
+    const hasSideBar = pathname.toLowerCase() !== '/ux/portfolio' && !pathname.toLowerCase().includes("/ux/project/")
+
     return (<>
         {isMobile && <><MobileView><Text padding={"150px 100px 15px"} fontSize="30px"><span>Sorry :(</span></Text><Text padding={"0 100px"} fontSize="20px">The mobile version is still under construction.</Text><Text fontSize="20px" padding={"15px 100px"}> Please view it on a desktop browser for optimal experience.</Text></MobileView></>}
         {
-            !isMobile && <MainLayout>
-                <NavBar title={display}></NavBar>
+            !isMobile && <MainLayout hasSideBar={hasSideBar}>
+                {hasSideBar && <NavBar title={display}></NavBar>}
+                {!hasSideBar && <HorizontalNavBar></HorizontalNavBar>}
                 <div></div>
                 <Content>
                     <Routes>
@@ -82,9 +86,9 @@ const Layout = ({ }) => {
 
 export default Layout;
 
-const MainLayout = styled.div`
+const MainLayout = styled.div<{ hasSideBar: boolean }>`
     display: grid;
-    grid-template-columns: minmax(0,125px) minmax(0,1fr);
+    grid-template-columns: ${p => p.hasSideBar ? 'minmax(0,125px) minmax(0,1fr)' : ""};
     flex-direction: column;
     width: 100vw;
     height: 100vh;

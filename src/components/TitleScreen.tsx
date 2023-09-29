@@ -50,7 +50,6 @@ const Arrow = styled.img`
 const Main = styled.div`
   /* background-image: url('/images/background.png'); */
 
-  width: calc(100vw - 150px);
   height: 100vh;
   padding: 5%;
   display: flex;

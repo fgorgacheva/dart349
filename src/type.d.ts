@@ -11,4 +11,10 @@ interface Project {
     descriptions?: string[],
     "extraImages"?: string[],
     "apps"?: string[],
+    type: string,
+    subtitle: string,
+    skills: string[], 
+    software: string[], 
+    languages: string[],
+    short: string,
 }

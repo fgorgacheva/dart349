@@ -2,9 +2,14 @@ export const UXProjects: {[key: string]: Project} = {
 
 
 
-"this": {
-        "date": "July 2023",
+"library": {
+        "type": "Personal Project 2022 - 2023",
         "title": "The Library",
+        "subtitle": "Personal Artwork Library",
+        "skills": ["UI | UX Design"],
+        "software": ["Figma"],
+        "languages": ["JavaScript", "React.js", "Typescript", "CSS"],
+        "short": "I created this library to compile my life's creative work, share it with friends and family, and enhance my UX research and design skills through three iterations. I'm passionate about 3D modeling, drawing, painting, and crafting, and I use this library to showcase the artwork I am proud to share.",
         "cover": "cover.jpg",
         "thumbnail": "cover.jpg",
         "brief": "In this case study, I explore the details of my virtual library's design process, sharing insights and lessons from my creative journey. Using Procreate for sketching and Figma for design, I ultimately developed it using React JS.",
@@ -25,8 +30,13 @@ export const UXProjects: {[key: string]: Project} = {
     },
     
 "neptronic": {
-        "date": "March 2023",
+        "type": "Part-Time Contract 2021 - 2023",
         "title": "Neptronic Cloud",
+        "subtitle": "Cloud Device Management Web Appliction",
+        "skills": ["UI Design", "UX Research", "Prototyping"],
+        "software": ["Adobe XD", "Figma"],
+        "languages": [],
+        "short": "Designed a cloud device management application from scratch for Neptronic, incorporating a modern aesthetic. The primary emphasis was on ensuring ease of use through a streamlined navigation system, resulting in improved user accessibility and overall efficiency.",
         "cover": "cover.jpg",
         "thumbnail": "cover.jpg",
         "brief": "Neptronic Cloud is a cloud device management application that I was tasked with revamping. Not only modernizing the general look and feel and staying true to the brand, but also optimizing this complex tool as much as possible. The design was created and prototyped in Adobe XD and its style guide was put together in Figma.",
@@ -41,8 +51,13 @@ export const UXProjects: {[key: string]: Project} = {
     },
 
 "avatar-project": {
-        "date": "April 2022",
+        "type": "UI | UX Design Research Case Study 2022",
         "title": "Pixel Persona",
+        "subtitle": "Multiplatform Telecommunication Avatars",
+        "skills": ["UI Design", "UX Design", "UX Research"],
+        "software": ["Figma", "Adobe Photoshop"],
+        "languages": [],
+        "short": "Pixel Persona is a project app aimed at revolutionizing telecommunication. It allows users to use avatars in video calls on platforms like Zoom, Discord, and Skype, enhancing meaningful interactions by preserving non-verbal cues. This user-friendly solution simplifies the process, making it accessible to everyone who needs an alternative to a webcam livefeed.",
         "cover": "cover.gif",
         "thumbnail": "cover.jpg",
         "brief": "Pixel Persona is a user-friendly application that allows users to create and customize virtual characters as their personas on communication platforms. It conceals their real faces while preserving their presence and body language. With its seamless plug-and-play fashion, users can easily select avatars, add the to their libraries and favorites, and use with camera tracking.",
@@ -60,8 +75,12 @@ export const UXProjects: {[key: string]: Project} = {
 }
 
 // "project-folder-name": {
-//     "date": "",
+//     "type": "",
 //     "title": "",
+//     "subtitle": "",
+//     "skills": "",
+//     "software": "",
+//     "languages": "",
 //     "cover": "",
 //     "thumbnail": "",
 //     "intro": "",

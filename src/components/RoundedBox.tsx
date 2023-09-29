@@ -12,6 +12,7 @@ interface RoundedBoxProps {
     hash?: string;
     shadow?: string;
     margin?: string;
+    color?: string;
 }
 
 interface RoundedBoxState {
@@ -31,9 +32,9 @@ interface RoundedBoxState {
 //     let query = useQuery();
 //     const navigate = useNavigate();
 
-const RoundedBox: React.FC<PropsWithChildren<RoundedBoxProps>> = ({ shadow, children, hash, width, height, flexDirection, center, padding, href, margin }) => {
+const RoundedBox: React.FC<PropsWithChildren<RoundedBoxProps>> = ({ shadow, color, children, hash, width, height, flexDirection, center, padding, href, margin }) => {
     const navigate = useNavigate()
-    return (<StyledReactBox shadow={shadow} width={width} height={height} flexDirection={flexDirection} center={center} hover={href !== undefined} padding={padding} margin={margin} onClick={href || hash ? () => {
+    return (<StyledReactBox shadow={shadow} color={color} width={width} height={height} flexDirection={flexDirection} center={center} hover={href !== undefined} padding={padding} margin={margin} onClick={href || hash ? () => {
         navigate({ pathname: href, hash: hash })
     } : undefined}>
         {children}
@@ -42,9 +43,9 @@ const RoundedBox: React.FC<PropsWithChildren<RoundedBoxProps>> = ({ shadow, chil
 
 export default RoundedBox;
 
-const StyledReactBox = styled.div<{ height?: string, width?: string, center?: boolean, padding?: string, flexDirection?: string, shadow?: string, hover: boolean, onClick?: VoidFunction, margin?: string }>`
+const StyledReactBox = styled.div<{ height?: string, width?: string, center?: boolean, padding?: string, flexDirection?: string, shadow?: string, color?: string, hover: boolean, onClick?: VoidFunction, margin?: string }>`
     border-radius: 15px;
-    background: rgba(241, 243, 249, 0.58);
+    background: ${p => p.color || 'rgba(241, 243, 249, 0.58)'};
     padding: ${p => p.padding || "0"};
     margin: ${p => p.margin || "0"};
     display: flex;

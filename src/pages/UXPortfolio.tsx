@@ -1,10 +1,11 @@
 import React from "react";
 import { ContentContainer } from "../components/ContentContainer";
-import Text from "../components/Text";
 import styled from "styled-components";
 import RoundedBox from "../components/RoundedBox";
 import { UXProjects } from "../UXProjectsData";
+import Text from "../components/Text";
 import Image from "../components/Image";
+import { UXProjectTile } from "../components/UXProjectTile";
 
 interface UXPortfolioProps {
 
@@ -18,109 +19,259 @@ class UXPortfolio extends React.Component<UXPortfolioProps, UXPortfolioState> {
     render() {
         return (
             <ContentContainer>
+                <Anchor id="top" />
                 <Main>
-                    <Header>
-                        <Text fontSize="30px" fontFamily="montserrat" padding="0 0 50px 0"><span>UX</span> Portfolio</Text>
-                        <BtnGroup>
+                    <Intro>
+                        <Greeting>
+                            <Text fontSize="50px" fontFamily="nunito" fontWeight="600">Hi, my name's Felicia!</Text>
+                            <Gap></Gap>
+                            <Text fontSize="40px" fontFamily="nunito" fontWeight="400">I’m a creative designer, weaving pixels and dreams with a creative gleam!✨</Text>
+                        </Greeting>
+                        <Picture width="100px" height="100px"></Picture>
+                    </Intro>
 
-                            <RoundedBox height="fit-content" width="fit-content" padding="15px" href="">
-                                <a target="_blank" style={{ textDecoration: 'none' }} href="/files/FGorgacheva_UX_CV_2023.pdf">
+                    <Portfolio>
 
-                                    <Text fontSize="15px" fontFamily="montserrat" fontWeight="700">CV</Text>
-                                </a>
-                            </RoundedBox>
-                            {/* <RoundedBox height="fit-content" width="fit-content" padding="15px" href="/ux">
-                                <Text fontSize="15px" fontFamily="montserrat">GALLERY</Text>
-                            </RoundedBox> */}
-                        </BtnGroup>
-                    </Header>
-                    <RoundedBox padding="20px">
-                        <Text fontSize="20px" fontWeight="">
-                            My drive for UX design stems from a love of creating intuitive and user-centered experiences. I am fascinated by the art of crafting interfaces that seamlessly connect with users, solving their problems and leaving a positive impact.
-                        </Text>
-                    </RoundedBox>
+                        <Anchor id="portfolio" />
+                        <Text fontSize="35px" fontFamily="nunito" fontWeight="700" align="center">PORTFOLIO</Text>
+                        <Gap></Gap><Gap></Gap><Gap></Gap>
+                        {Object.keys(UXProjects).map((key, i) => {
+                            const project = UXProjects[key];
+                            return <UXProjectTile rightSide={i % 2 === 1} projectKey={key} project={project}></UXProjectTile>
+                        })}
+                    </Portfolio>
 
-                    <Text fontSize="30px" fontFamily="montserrat" padding="50px 0 10px 0">Creative <span>Statement</span>
-                    </Text>
-                    <Text fontSize="18px" fontWeight="">
-                        In our ever-rising digital society, user experience grows exponentially. It began with "The Design of Everyday Things" where Don Norman explained and emphasized the importance of the design of the objects of our corporeal world. Now let's imagine an entire universe we can't touch or manipulate other than with tools and pixels on a screen. The majority of tools we use, processes we must complete, even our entertainment, are nearly all digital: banking, messaging, picking movies, playing games, etc. More and more home appliances have screens too now: thermostats, toasters, fridges, even stoves, to name a few!
-                        <br></br><br></br>The more things we have to deal with, the more we have to navigate. This is the most important point where understanding the sheer significance of UX and interaction design is crucial. If in a day, we have to sort out our bills, send a few emails, make a some calls, then go to the kitchen to use the screen on the fridge, maybe lower the temperature in the house because it's a little too hot, get back to some screen in the kitchen, and finally perhaps watch something while we finish our meal, isn't it key for us as users to be able to deal with this panoply of applications and displays as effectively as possible?
-                        <br></br><br></br>I believe so, and with my drive and determination, I want to add to this world of easy, simple, and modern designs that will surround us to improve our user experience with the "new" every day things. My design ideology stands with "Don't Make Me Think!" by Steve Krug, a book that my design professor recommended and made everything make sense. I am determined to contribute to our digital world, one design at a time!
+                    <AboutMe>
 
-                    </Text>
+                        <Anchor id="about" />
+                        <Text fontSize="35px" fontFamily="nunito" fontWeight="700" align="center">ABOUT ME</Text>
 
-                    <Text fontSize="30px" fontFamily="montserrat" padding="50px 0 10px 0"><span>Featured</span> Projects</Text>
+                        <Description>
+                            <Text fontSize="30px" fontFamily="nunito" fontWeight="400">I strive to craft <span>user-centered</span> and <span>visually appealing</span> designs that <span>elevate the user experience</span>.</Text>
+                            <Gap></Gap>
+                            <Text fontSize="25px" fontFamily="nunito" fontWeight="400">Based in Montreal, I am a recent graduate from Concordia University. I specialize in UI | UX Design. My passion stems from the potential to have a positive impact on people's digital experiences. I'm committed to conducting thorough user research, iterating based on feedback, and employing data-driven insights to continuously enhance the user experience. My goal is to craft accessible, creative, and polished designs that elevate product usability and user satisfaction.</Text>
+                        </Description>
 
-                    <Collection>
-                        <RoundedBox href="/ux/project/this" shadow='0px 10px 15px -3px rgba(0,0,0,0.1)'>
-                            <FeaturedProject>
-                                <Image src={`/images/projects/UX/this/${UXProjects['this'].thumbnail || ""}`}></Image>
-                                <Text fontSize="30px" fontFamily="montserrat" >{UXProjects['this'].title}</Text>
-                            </FeaturedProject>
-                        </RoundedBox>
-                        <RoundedBox href="/ux/project/neptronic" shadow='0px 10px 15px -3px rgba(0,0,0,0.1)'>
-                            <FeaturedProject>
-                                <Image src={`/images/projects/UX/neptronic/${UXProjects['neptronic'].thumbnail || ""}`}></Image>
-                                <Text fontSize="30px" fontFamily="montserrat">{UXProjects['neptronic'].title}</Text>
-                            </FeaturedProject>
-                        </RoundedBox>
-                        <RoundedBox href="/ux/project/avatar-project" shadow='0px 10px 15px -3px rgba(0,0,0,0.1)'>
-                            <FeaturedProject>
-                                <Image src={`/images/projects/UX/avatar-project/${UXProjects['avatar-project'].thumbnail || ""}`}></Image>
-                                <Text fontSize="30px" fontFamily="montserrat">{UXProjects['avatar-project'].title}</Text>
-                            </FeaturedProject>
 
-                        </RoundedBox>
-                    </Collection>
+                    </AboutMe>
+
+
 
                 </Main>
+                <Details>
+
+                    {/* Education */}
+                    <Education>
+                        <Text fontSize="25px" fontFamily="montserrat" fontWeight="400" color="#C092F9">EDUCATION</Text>
+                        <table>
+                            <tr>
+                                <td><Text fontSize="20px" fontFamily="montserrat" fontWeight="400" color="#918CAB">B.F-A. Computation Arts</Text></td>
+                                <td><Text fontSize="20px" fontFamily="montserrat" fontWeight="400" color="#918CAB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;2019</Text></td>
+                            </tr>
+                            <tr>
+                                <td><Text fontSize="20px" fontFamily="montserrat" fontWeight="400" color="#918CAB">DEC Computer Science </Text></td>
+                                <td><Text fontSize="20px" fontFamily="montserrat" fontWeight="400" color="#918CAB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;2023</Text></td>
+                            </tr>
+                        </table>
+                    </Education>
+
+                    {/* Experience */}
+                    <Experience>
+                        <Text fontSize="25px" fontFamily="montserrat" fontWeight="400" color="#C092F9">EXPERIENCE&nbsp;<br></br></Text>
+
+                        <table>
+                            <tr>
+                                <td><Text fontSize="20px" fontFamily="montserrat" fontWeight="400" color="#918CAB">Neptronic - UI | UX Contract</Text></td>
+                                <td><Text fontSize="20px" fontFamily="montserrat" fontWeight="400" color="#918CAB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;2021 - 2023</Text></td>
+                            </tr>
+                            <tr>
+                                <td><Text fontSize="20px" fontFamily="montserrat" fontWeight="400" color="#918CAB">DevStack - Freelance</Text></td>
+                                <td><Text fontSize="20px" fontFamily="montserrat" fontWeight="400" color="#918CAB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;2021</Text></td>
+                            </tr>
+                            <tr>
+                                <td><Text fontSize="20px" fontFamily="montserrat" fontWeight="400" color="#918CAB">Summit-Tech - Programmer Internship</Text></td>
+                                <td><Text fontSize="20px" fontFamily="montserrat" fontWeight="400" color="#918CAB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;2019</Text></td>
+                            </tr>
+                        </table>
+                    </Experience>
+
+                    {/* Skills */}
+                    <Skills>
+                        <Text fontSize="25px" fontFamily="montserrat" fontWeight="400" color="#C092F9">SKILLS</Text>
+                        <Text fontSize="20px" fontFamily="montserrat" fontWeight="400" color="#918CAB">&nbsp;<br></br>UI | UX&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;Interaction Design&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;Figma&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;Adobe XD&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;Front-End Development (HTML, CSS, JS)&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;OOP <br></br> English  Fluent&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;French Proficient&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;Bulgarian Native</Text>
+                    </Skills>
+                </Details>
+
+                <Footer>
+                    <Contact>
+                        <Anchor id="contact" />
+                        <Text fontSize="35px" fontFamily="nunito" fontWeight="700" color="white">Ready to turn curiosity into conversation? <br></br> Let's connect and make things happen! ✨</Text>
+                        <Links>
+                            <Email>
+                                <Image width="30px" src="/images/icons/at.svg"></Image>
+                                <Text fontSize="25px" fontFamily="nunito" fontWeight="500" color="white" padding="0 20px">fgorgacheva@gmail.com</Text>
+                            </Email>
+
+                            <LinkedIn>
+                                <Image width="30px" src="/images/icons/in.svg"></Image>
+                                <Text fontSize="25px" fontFamily="nunito" fontWeight="500" color="white" padding="0 20px">fgorgacheva/in</Text>
+                            </LinkedIn>
+                        </Links>
+                    </Contact>
+
+                    <Boba>
+                        <Image width="400px" height="" src="/images/decoration/bobacat.png"></Image>
+                    </Boba>
+                </Footer>
+
             </ContentContainer>);
     }
 }
 
 export default UXPortfolio;
 
+const Anchor = styled.a`
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+    width: 50px;
+    height: 50px;
+`
+
 const Main = styled.div`
     width: 100%;
-    padding: 5% 10%;
+    padding: 15% 20%;
+    padding-bottom: 0;
     text-align: left;
+    align-items: center;
     
 `;
 
-const Header = styled.div`
+const Intro = styled.div`
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
 `;
 
-const Collection = styled.div`
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 15px;
+const Greeting = styled.div`
+    margin: auto;
 `;
 
-const FeaturedProject = styled.div`
-    display: grid;
-    grid-template-columns: minmax(0,1fr) minmax(0,2fr);
-    grid-template-rows: minmax(0,1fr);
-    grid-gap: 10px;
-    max-height: 150px;
+const Picture = styled.img`
+    /* background-image: url("/images/projects/3D/self/face_right.png"); */
+    background-image: url("/images/me.jpg");
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    background-position: center;
+    background-size: cover;
+
+    display: block;
+    margin-left: auto;
+`;
+
+const Portfolio = styled.div`
+    margin-top: 30%;
+    width: 150%;
+    margin-left: -25%;
+    text-align: center;
+`;
+
+const AboutMe = styled.div`
+    margin-top: 30%;
+    text-align: center;
+`;
+
+const Description = styled.div`
+margin-top: 10%;
+text-align: left;
+
+span{
+    color: #C092F9;
+    font-weight: 700;
+}
+`;
+
+const Gap = styled.div`
+    margin-top: 5%;
+`;
+
+const Details = styled.div`
+    background-image: url("/images/details.png");
+    padding: 16% 20%;
+    margin-top: 5%;
+    background-size: cover;
+    height: 500%;
     width: 100%;
-    align-items: center;
-    justify-items: center;
-    img {
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    display: grid;
+    grid: repeat(2, 1fr);
+
+    text-align: left;
+
+    table {
+        padding-top: 20px;
+        p {
+            white-space: nowrap;
+        }
     }
-`
+`;
 
-const BtnGroup = styled.div`
+const Education = styled.div`
+    
+
+`;
+
+const Experience = styled.div`
+    padding-left: 25px;
+`;
+
+const Skills = styled.div`
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 5%;
+    
+`;
+
+const Footer = styled.div`
+    margin-top: 10%;
+    margin-bottom: 0%;
+    padding: 10% 15% 5% 20%;
+    background-image: url("/images/footer.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+`;
+
+const Contact = styled.div`
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+`;
+
+const Boba = styled.div`
     display: flex;
-    flex-direction: row;
-    gap: 15px;
-    justify-content: flex-end;
-`
+    justify-content: center;
+    align-items: center;
+`;
+
+const Links = styled.div`
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+`;
+
+const Email = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 15fr;
+
+`;
+
+const LinkedIn = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 15fr;
+
+`;

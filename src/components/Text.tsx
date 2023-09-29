@@ -8,16 +8,22 @@ interface Props {
     padding?: string,
     color?: string,
     fontFamily?: string,
-    blend?: boolean
+    blend?: boolean,
+    align?: string,
+    margin?: string,
+    whiteSpace?: string,
 }
-function Text({ children, fontSize, fontWeight, padding, color, fontFamily, blend }: PropsWithChildren<Props>) {
+function Text({ children, fontSize, fontWeight, padding, margin, color, fontFamily, blend, align, whiteSpace }: PropsWithChildren<Props>) {
     return (<StyledText
         fontSize={fontSize}
         fontWeight={fontWeight}
         padding={padding}
+        margin={margin}
         color={color}
         blend={blend}
-        fontFamily={fontFamily}>
+        align={align}
+        fontFamily={fontFamily}
+        whiteSpace={whiteSpace}>
         {children}
     </StyledText>);
 }
@@ -27,11 +33,13 @@ const StyledText = styled.p<Props>`
     font-family: ${p => p.fontFamily || "nunito"};
     font-size: ${p => p.fontSize};
     font-weight: ${p => p.fontWeight};
+    text-align: ${p => p.align || "left"};
     padding: ${p => p.padding || "0"};
-    margin: 0%;
+    margin: ${p => p.margin || "0"};;
     ${p => p.blend && { ...{ mixBlendMode: "difference" } }}
     line-height: 150%;
-    white-space: pre-line;
+    white-space: ${p => p.whiteSpace || "pre-line"};
+    
     span{
         font-weight: 800;
     }

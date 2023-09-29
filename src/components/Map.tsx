@@ -112,7 +112,6 @@ export class Map extends Component<Props, State> {
 
 // Main Styles ---------------------------------------------------------
 const Main = styled.div`
-  width: calc(100vw - 150px);
   height: 100vh;
 
   font-family: nunito;
