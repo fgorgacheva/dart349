@@ -23,7 +23,7 @@ export class Map extends Component<Props, State> {
     return (
       <Main>
         <Welcome>Welcome!</Welcome>
-        <Brief>This is my <span>virtual library</span>. It contains all the work I am most proud of <br></br> and that I am eager to share with the world!</Brief>
+        <Brief>This is my <span>virtual library</span>. Created by myself in <span>React.js</span>, it contains <br></br>  all the work I am most proud of and eager to share with the world!</Brief>
 
         <MainGrid>
 
@@ -32,7 +32,7 @@ export class Map extends Component<Props, State> {
             <RoundedBox padding="0px 30px" flexDirection='column'>
               {/* <TextContainer> */}
               <Text padding='20px 0' fontSize='25px'>Explore and learn more about <span>me</span> and my <span>work</span>!</Text>
-              <Text fontSize='20px'>I specialize in UX Design, I have a passion for 3D modeling and I love cats!</Text>
+              <Text fontSize='20px'>I am passionate about video games, cats and bubbles. Naturally, my love for user experience and 3D modeling runs deep! Design, programming, 3D production, you name it! </Text>
               <Image src="/images/decoration/bobacat-spill.png" width='75%' height='50%' />
               {/* </TextContainer> */}
 
