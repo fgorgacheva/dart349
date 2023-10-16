@@ -25,7 +25,7 @@ export const ThreeDProjects: {[key: string]: Project} = {
                         For our project, the subject we chose is the deteriorating posture of the average first world person caused by overuse of mobile devices. The downward uncomfortable angle of the chair is meant to push the users in a position in which they actually feel comfortable browsing on their phones but otherwise uncomfortable. During the presentation, the feedback we received was exactly as expected; viewers immediately felt conscious about their posture, readjusted, and users actually felt comfortable while scrolling on their phones - less so trying to look up and talk to people, as intended.\n\n\
                         The renders were made to include in a pamphlet meant to represent an IKEA catalogue in a world in which the slouched position would be the new normal, and doubled as the informative leaflet of our installation.\n\n\
                         The scenes were modeled and taxtured in Blender entirely. The dining room and the study/office include early prototypes we had made that I included for the idea of a diverse choice of models. The bedroom includes the actual model of the chair we made.",
-        "extraImages": ["bedroom.png","study.png"],
+        "extraImages": ["bedroom.png","study.png", "actual.jpg"],
         "apps": ["blender.svg", "photoshop.svg"]
     },
 
@@ -63,7 +63,7 @@ export const ThreeDProjects: {[key: string]: Project} = {
                         This project was modelled after an underground tunnel design in Montreal's underground city system. The tunnel is found between the metro stations Place des Arts and Bonaventure.\n\n\
                         I used Blender for modelling and some texturing, Substance Painter for most texturing, Photoshop to put together the billboard, and finally, Premier Pro to put together the rendered frames and the audio.",
         "extraImages": ["tunnel-measures.png", "raw-curve.png", "project-sketch.png"],
-        "apps": ["blender.svg", "substance.svg", "photoshop.svg", "premierpro.svg"]
+        "apps": ["blender.svg", "substance.svg", "photoshop.svg", "premierepro.svg"]
     },
 
 "miko": {
