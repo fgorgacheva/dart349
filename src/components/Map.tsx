@@ -101,17 +101,19 @@ export class Map extends Component<Props, State> {
         </Contact> */}
 
         <Footer>
+
           <Contact>
-            <Text fontSize="35px" fontFamily="nunito" fontWeight="700" color="white">Curious? Let's talk! ✨ <br></br><br></br></Text>
+            <Text fontSize="35px" fontFamily="nunito" fontWeight="700" color="white">Curious? Let's talk! ✨
+            </Text>
             <Links>
               <Email>
                 <Image width="30px" src="/images/icons/at.svg"></Image>
-                <Text fontSize="25px" fontFamily="nunito" fontWeight="500" color="white" padding="0 20px">fgorgacheva@gmail.com</Text>
+                <Text fontSize="25px" fontFamily="nunito" fontWeight="500" color="white" padding="0 20px"><StyledLink href="mailto:fgorgacheva@gmail.com">fgorgacheva@gmail.com</StyledLink></Text>
               </Email>
 
               <LinkedIn>
                 <Image width="30px" src="/images/icons/in.svg"></Image>
-                <Text fontSize="25px" fontFamily="nunito" fontWeight="500" color="white" padding="0 20px">fgorgacheva/in</Text>
+                <Text fontSize="25px" fontFamily="nunito" fontWeight="500" color="white" padding="0 20px"><StyledLink href="https://www.linkedin.com/in/fgorgacheva">in/fgorgacheva</StyledLink></Text>
               </LinkedIn>
             </Links>
           </Contact>
@@ -119,6 +121,7 @@ export class Map extends Component<Props, State> {
           <Boba>
             <Image width="400px" height="" src="/images/decoration/bobacat.png"></Image>
           </Boba>
+          <BackgroundImage src="/images/footer2.png"></BackgroundImage>
         </Footer>
 
       </Main >
@@ -171,7 +174,7 @@ const LeftSection = styled.div`
   display: grid;
   grid-template-columns: minmax(0,1fr);
   grid-template-rows: minmax(0,1fr);
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 
   img{
@@ -269,18 +272,14 @@ const ButtonImage = styled.img`
 //   flex-wrap: wrap;
 // `;
 
-// const StyledLink = styled.a`
-//   align-items: center;
-//   display: grid;
-//   grid-template-columns: minmax(0,.5fr) minmax(0,2fr);
-//   text-decoration: none;
-//   img{
-//     width: 40px;
-//     margin:0;
-//     padding: 0;
-//   }
-//   text-align: left;
-// `;
+const StyledLink = styled.a`
+  align-items: center;
+  display: grid;
+  grid-template-columns: minmax(0,.5fr) minmax(0,2fr);
+  text-decoration: none;
+  color: white;
+  text-align: left;
+`;
 
 // const JijiImage = styled(Image)`
 // `
@@ -326,28 +325,33 @@ const ButtonImage = styled.img`
 // `
 
 // footer Styles -----------------------------------------------------------
-
+const BackgroundImage = styled.img`
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    bottom: 0;
+`
 
 const Footer = styled.div`
+    position: relative;
     margin-top: 10%;
-    margin-bottom: 0%;
+    margin-bottom: 0;
     padding: 10% 15% 5% 20%;
-    background-image: url("/images/footer2.png");
-    background-size: cover;
-    background-repeat: no-repeat;
     width: 100%;
-
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: minmax(0,3fr)  minmax(0,1fr) ;
 `;
 
 const Contact = styled.div`
     display:flex;
+    z-index: 2;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-bottom: 30px;
 `;
 
 const Boba = styled.div`
+z-index:2;
     display: flex;
     justify-content: center;
     align-items: center;

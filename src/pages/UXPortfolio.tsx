@@ -109,12 +109,12 @@ class UXPortfolio extends React.Component<UXPortfolioProps, UXPortfolioState> {
                         <Links>
                             <Email>
                                 <Image width="30px" src="/images/icons/at.svg"></Image>
-                                <Text fontSize="25px" fontFamily="nunito" fontWeight="500" color="white" padding="0 20px">fgorgacheva@gmail.com</Text>
+                                <Text fontSize="25px" fontFamily="nunito" fontWeight="500" color="white" padding="0 20px"><StyledLink href="mailto:fgorgacheva@gmail.com">fgorgacheva@gmail.com</StyledLink></Text>
                             </Email>
 
                             <LinkedIn>
                                 <Image width="30px" src="/images/icons/in.svg"></Image>
-                                <Text fontSize="25px" fontFamily="nunito" fontWeight="500" color="white" padding="0 20px">fgorgacheva/in</Text>
+                                <Text fontSize="25px" fontFamily="nunito" fontWeight="500" color="white" padding="0 20px"><StyledLink href="https://www.linkedin.com/in/fgorgacheva">in/fgorgacheva</StyledLink></Text>
                             </LinkedIn>
                         </Links>
                     </Contact>
@@ -274,4 +274,13 @@ const LinkedIn = styled.div`
     display: grid;
     grid-template-columns: 1fr 15fr;
 
+`;
+
+const StyledLink = styled.a`
+  align-items: center;
+  display: grid;
+  grid-template-columns: minmax(0,.5fr) minmax(0,2fr);
+  text-decoration: none;
+  color: white;
+  text-align: left;
 `;
