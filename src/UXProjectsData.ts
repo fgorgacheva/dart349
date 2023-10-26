@@ -2,7 +2,51 @@ export const UXProjects: {[key: string]: Project} = {
 
 
 
-"library": {
+"neptronic": {
+        "type": "Part-Time Contract 2021 - 2023",
+        "title": "Neptronic Cloud",
+        "subtitle": "Cloud Device Management Web Appliction",
+        "skills": ["UI Design", "UX Research", "Prototyping"],
+        "software": ["Adobe XD", "Figma"],
+        "languages": [],
+        "short": "Designed a cloud device management application from scratch for Neptronic, incorporating a modern aesthetic. The primary emphasis was on ensuring ease of use through a streamlined navigation system, resulting in improved user accessibility and overall efficiency.",
+        "cover": "cover.jpg",
+        "thumbnail": "cover.jpg",
+        "brief": "Neptronic Cloud is a cloud device management application that is made to monitor and control systems of machines remotely. This system comprises of large amounts of information on various types of machines and a large set of tools that allow the management of such systems. My task was to find the best way to oragnize all the data nad the tools to make the navigation and information access as quick and easy as possible for all the various types of end users that would be working with Neptronic Cloud.",
+        "descriptions": ["To understand my task better, I took the time to understand what the application really does and how it operates, find out what features are the ones we must put forward to increase the quality of life of the users. I worked alongside my client, always ensuring approval of the designs to realize their vision as best we can as well as the team of developers to ensure that all aspects of the design are feasible. When the whole team is on the same page, it ensures for a smooth design and development process!",
+                        "This application manages a variety of complex data that needs to be quickly and easily accessible. As it manages HVAC systems in majority, it needed to be simple and easy enough to use by internal employees managing the machines and monitoring their state and by external users seeking to only access thermostat regulation modules.",
+                        "The more complex data becomes, the more important relying on visual memory to ensure smooth navigation. For instance some information was required to always be visible like the navigation tabs, global alerts, temperature surrounding the monitored site, and quick access tools which i’ve placed in ribbons for direct access. ",
+                        "Moreover, colors, grouping and recognizable icons also help with navigating a lot faster. Psychologically, our brains and eyes will scan and jump to the most obvious details or brightest colors. Based on recognition, certain colors come with certain meanings. It is important to use such things to our advantage as designers, not only when dealing with complex information, but whenever we wish to create designs that ensure the best user experience possible!",
+                        "I worked on this project on call over the span of 3 years, so many aspects, features and details had time for redesign and change as the client’s requirements and needs evolved. Naturally more things were added and others modified, but always with the intention to keep things smooth, simple, and optimized.\n\n\ During that time, I was also tasked a number of times to design a logo for the application. As it went through many iteration and complete overhauls, it was still good experience for me to put some of my graphic skills to use. I learned much more about Adobe Illustrator as well as the tools offered in Figma for graphic design.\n\n\ In the end, I created a style guide to leave with the team of developers to make sure they have a reference to help keep everything consistent including color values, font families, distances, values of rounded corners and drop shadows, etc. The app covered such a vast amount of information that it called for quite a lot of attention to detail."
+                    ],
+        "images": ["strip1.png", "strip2.png", "strip3.png", "logos.png", "style-guide.png"],
+        "apps": ["xd.svg","figma.svg"]
+    },
+
+"avatar-project": {
+        "type": "UI | UX Design Research Case Study 2022",
+        "title": "Pixel Persona",
+        "subtitle": "Multiplatform Telecommunication Avatars",
+        "skills": ["UI Design", "UX Design", "UX Research"],
+        "software": ["Figma", "Adobe Photoshop"],
+        "languages": [],
+        "short": "Pixel Persona is a project app aimed at revolutionizing telecommunication. It allows users to use avatars in video calls on platforms like Zoom, Discord, and Skype, enhancing meaningful interactions by preserving non-verbal cues. This user-friendly solution simplifies the process, making it accessible to everyone who needs an alternative to a webcam livefeed.",
+        "cover": "cover.gif",
+        "thumbnail": "cover.jpg",
+        "brief": "Pixel Persona is a user-friendly application that allows users to create and customize virtual characters to use as their personas on communication platforms. It conceals their real faces while preserving their presence and body language ot limit unwanted camera exposure. With its seamless plug-and-play fashion, users can easily select avatars, add the to their libraries and favorites, and use with camera tracking.",
+        "descriptions": ["This is a theoretical design project I developed for my UX class. Students were tasks to find an issue in our daily lives and design an application that would remedy that issue. During the pandemic, as we were all forced to adapt to remote work and learning, the use of cameras became something often require and mostly disliked and I myself didn’t like opening my camera.",
+                        "What if we could use avatars to represent ourselves that would hide our face but still track our body language?",
+                        "Research \n\n\ When considering this issue, my thoughts went to Vtubers and VRChat. Both platforms use virtual characters to disguise identities. Vtubers gained popularity for streaming without showing faces, while VRChat allows users to pick characters from galleries to use to represent themselves. \n\n\ In surveys conducted by myself among my classmates, the majority expressed a preference for keeping the camera off, while a little over half of them said they would opt for using an avatar if given the choice. Some valued body language in communication, while others saw it more as a temporary predicament. However, for important discussions, debates, assignments, and projects, seeing teammates together was considered optimal.",
+                        "",
+                        "",
+                        "The app's goal is to let users pick a character and connect to a communication platform. Prioritizing user-friendly navigation to ensure all tools are easily accessible with quick access to characters for a seamless experience was key in this design. \n\n\ I always take the time to imagine myself using the applications I design; what kinda of experience do I want to have, what features do I need, would my friends or family be able to use this application easily? Quality of life is always extremely important.",
+                        "## What did I learn? \n\n\ In this assignment, I learned to explore the common issues people face in their daily lives, come up with an idea for a tool that would remedy one of the issues, design it and conduct tests and surveys to improve features. \n\n\ I learned a lot about putting yourself in the shoes of the user and create a design that will reduce the risk of errors, encourage exploration, and ensure a seamless and smooth experience! \n\n\ Although this was a theoretical design exercise, with a background in computer science, I tried as much as possible to consider the development process of this application. The areas where I had more difficulty were the external connections between the applications to create that “plug and play” experience, I would have very much enjoyed to talk to someone with more expertise and learn about how this could be done successfully. As designers, it’s important to consider what can actually be executed in practice!",
+                    ],
+        "images": ["problem-statement.png", "user-persona.png", "problems.png", "wireframes.png", "moodboard.png", "design.png"],
+        "apps": ["figma.svg"]
+    },
+
+    "library": {
         "type": "Personal Project 2022 - 2023",
         "title": "The Library",
         "subtitle": "Personal Artwork Library",
@@ -28,50 +72,6 @@ export const UXProjects: {[key: string]: Project} = {
         "images": ["problem-statement.png", "og-design.png", "user-persona.png", "inspiration.png", "problems.png", "flow.png", "wireframes.png", "moodboard.png", "design.png"],
         "apps": ["figma.svg"]
     },
-    
-"neptronic": {
-        "type": "Part-Time Contract 2021 - 2023",
-        "title": "Neptronic Cloud",
-        "subtitle": "Cloud Device Management Web Appliction",
-        "skills": ["UI Design", "UX Research", "Prototyping"],
-        "software": ["Adobe XD", "Figma"],
-        "languages": [],
-        "short": "Designed a cloud device management application from scratch for Neptronic, incorporating a modern aesthetic. The primary emphasis was on ensuring ease of use through a streamlined navigation system, resulting in improved user accessibility and overall efficiency.",
-        "cover": "cover.jpg",
-        "thumbnail": "cover.jpg",
-        "brief": "Neptronic Cloud is a cloud device management application that I was tasked with revamping. Not only modernizing the general look and feel and staying true to the brand, but also optimizing this complex tool as much as possible. The design was created and prototyped in Adobe XD and its style guide was put together in Figma.",
-        "descriptions": ["To understand my task better, I took the time to understand what the application really does and how it operates, find out what features are the ones we must put forward to increase the quality of life of the users. I worked alongside my client, always ensuring approval of the designs to realize their vision as best we can as well as the team of developers to ensure that all aspects of the design are feasible. When the whole team is on the same page, it ensures for a smooth design and development process!",
-                        "This application manages a variety of complex data that needs to be quickly and easily accessible. As it manages HVAC systems in majority, it needed to be simple and easy enough to use by internal employees managing the machines and monitoring their state and by external users seeking to only access thermostat regulation modules.",
-                        "The more complex data becomes, the more important relying on visual memory to ensure smooth navigation. For instance some information was required to always be visible like the navigation tabs, global alerts, temperature surrounding the monitored site, and quick access tools which i’ve placed in ribbons for direct access. ",
-                        "Moreover, colors, grouping and recognizable icons also help with navigating a lot faster. Psychologically, our brains and eyes will scan and jump to the most obvious details or brightest colors. Based on recognition, certain colors come with certain meanings. It is important to use such things to our advantage as designers, not only when dealing with complex information, but whenever we wish to create designs that ensure the best user experience possible!",
-                        "I worked on this project on call over the span of 3 years, so many aspects, features and details had time for redesign and change as the client’s requirements and needs evolved. Naturally more things were added and others modified, but always with the intention to keep things smooth, simple, and optimized.\n\n\ During that time, I was also tasked a number of times to design a logo for the application. As it went through many iteration and complete overhauls, it was still good experience for me to put some of my graphic skills to use. I learned much more about Adobe Illustrator as well as the tools offered in Figma for graphic design.\n\n\ In the end, I created a style guide to leave with the team of developers to make sure they have a reference to help keep everything consistent including color values, font families, distances, values of rounded corners and drop shadows, etc. The app covered such a vast amount of information that it called for quite a lot of attention to detail."
-                    ],
-        "images": ["strip1.png", "strip2.png", "strip3.png", "logos.png", "style-guide.png"],
-        "apps": ["xd.svg","figma.svg"]
-    },
-
-"avatar-project": {
-        "type": "UI | UX Design Research Case Study 2022",
-        "title": "Pixel Persona",
-        "subtitle": "Multiplatform Telecommunication Avatars",
-        "skills": ["UI Design", "UX Design", "UX Research"],
-        "software": ["Figma", "Adobe Photoshop"],
-        "languages": [],
-        "short": "Pixel Persona is a project app aimed at revolutionizing telecommunication. It allows users to use avatars in video calls on platforms like Zoom, Discord, and Skype, enhancing meaningful interactions by preserving non-verbal cues. This user-friendly solution simplifies the process, making it accessible to everyone who needs an alternative to a webcam livefeed.",
-        "cover": "cover.gif",
-        "thumbnail": "cover.jpg",
-        "brief": "Pixel Persona is a user-friendly application that allows users to create and customize virtual characters as their personas on communication platforms. It conceals their real faces while preserving their presence and body language. With its seamless plug-and-play fashion, users can easily select avatars, add the to their libraries and favorites, and use with camera tracking.",
-        "descriptions": ["This is a theoretical design project I developed for my UX class. Students were tasks to find an issue in our daily lives and design an application that would remedy that issue. During the pandemic, as we were all forced to adapt to remote work and learning, the use of cameras became something often require and mostly disliked and I myself didn’t like opening my camera.",
-                        "What if we could use avatars to represent ourselves that would hide our face but still track our body language?",
-                        "Research \n\n\ When considering this issue, my thoughts went to Vtubers and VRChat. Both platforms use virtual characters to disguise identities. Vtubers gained popularity for streaming without showing faces, while VRChat allows users to pick characters from galleries to use to represent themselves. \n\n\ In surveys conducted by myself among my classmates, the majority expressed a preference for keeping the camera off, while a little over half of them said they would opt for using an avatar if given the choice. Some valued body language in communication, while others saw it more as a temporary predicament. However, for important discussions, debates, assignments, and projects, seeing teammates together was considered optimal.",
-                        "",
-                        "",
-                        "The app's goal is to let users pick a character and connect to a communication platform. Prioritizing user-friendly navigation to ensure all tools are easily accessible with quick access to characters for a seamless experience was key in this design. \n\n\ I always take the time to imagine myself using the applications I design; what kinda of experience do I want to have, what features do I need, would my friends or family be able to use this application easily? Quality of life is always extremely important.",
-                        "## What did I learn? \n\n\ In this assignment, I learned to explore the common issues people face in their daily lives, come up with an idea for a tool that would remedy one of the issues, design it and conduct tests and surveys to improve features. \n\n\ I learned a lot about putting yourself in the shoes of the user and create a design that will reduce the risk of errors, encourage exploration, and ensure a seamless and smooth experience! \n\n\ Although this was a theoretical design exercise, with a background in computer science, I tried as much as possible to consider the development process of this application. The areas where I had more difficulty were the external connections between the applications to create that “plug and play” experience, I would have very much enjoyed to talk to someone with more expertise and learn about how this could be done successfully. As designers, it’s important to consider what can actually be executed in practice!",
-                    ],
-        "images": ["problem-statement.png", "user-persona.png", "problems.png", "inspiration.png", "wireframes.png", "moodboard.png", "design.png"],
-        "apps": ["figma.svg"]
-    }
 }
 
 // "project-folder-name": {

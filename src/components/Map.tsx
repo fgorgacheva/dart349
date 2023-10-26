@@ -23,16 +23,16 @@ export class Map extends Component<Props, State> {
     return (
       <Main>
         <Welcome>Welcome!</Welcome>
-        <Brief>This is my <span>virtual library</span>. Created by myself in <span>React.js</span>, it contains <br></br>  all the work I am most proud of and eager to share with the world!</Brief>
+        <Brief>This is my <span>virtual library</span>. Created in <span>React.js</span>, it contains <br></br>  all the work I am most proud of and eager to share with the world!</Brief>
 
         <MainGrid>
 
           <LeftSection>
             {/* about me */}
-            <RoundedBox padding="0px 30px" flexDirection='column'>
+            <RoundedBox padding="0px 50px 80px 50px" flexDirection='column'>
               {/* <TextContainer> */}
               <Text padding='20px 0' fontSize='25px'>Explore and learn more about <span>me</span> and my <span>work</span>!</Text>
-              <Text fontSize='20px'>I am passionate about video games, cats and bubbles. Naturally, my love for user experience and 3D modeling runs deep! Design, programming, 3D production, you name it! </Text>
+              <Text fontSize='20px'>I am passionate about video games, cats and bubbles. My love for design and 3D runs deep with experience in ux, programming, 3D production, and artsy hobbies!</Text>
               <Image src="/images/decoration/bobacat-spill.png" width='75%' height='50%' />
               {/* </TextContainer> */}
 
@@ -52,7 +52,7 @@ export class Map extends Component<Props, State> {
 
           <RightSection>
             {/* Ux  */}
-            <RoundedBox href="/ux/portfolio">
+            <RoundedBox href="/ux">
               <ButtonImage src={UxIcon} />
             </RoundedBox>
             {/* 3d */}
@@ -66,7 +66,7 @@ export class Map extends Component<Props, State> {
           </RightSection>
         </MainGrid>
 
-        <Contact id="contact">
+        {/* <Contact id="contact">
           <Text fontSize='30px' padding='0 0 15px 0'><span>Contact</span> me!</Text>
           <ContactContainer >
             <RoundedBox height="100%" padding={"0"}>
@@ -83,11 +83,11 @@ export class Map extends Component<Props, State> {
                   {/* <StyledLink target='_blank' rel='noopener noreferrer' href="https://github.com/fgorgacheva">
                   <img src="/images/icons/github1.png" alt="" />
                   <Text fontSize='20px'>/fgorgacheva</Text>
-                </StyledLink> */}
+                </StyledLink> //
                 </Links>
                 {/* <JijiDiv>
                 <JijiImage src='/images/decoration/bobacat-stack.png' height="100%" />
-              </JijiDiv> */}
+              </JijiDiv> 
                 <BobaDiv>
                   <RoundedBox center>
                     <Image src='/images/decoration/bobacat.png' height='100%' width='100%' />
@@ -96,14 +96,30 @@ export class Map extends Component<Props, State> {
                 </BobaDiv>
 
               </InnerContactContainer>
-            </RoundedBox>
-
-
-
+            </RoundedBox>*}
           </ContactContainer>
+        </Contact> */}
 
+        <Footer>
+          <Contact>
+            <Text fontSize="35px" fontFamily="nunito" fontWeight="700" color="white">Curious? Let's talk! ✨ <br></br><br></br></Text>
+            <Links>
+              <Email>
+                <Image width="30px" src="/images/icons/at.svg"></Image>
+                <Text fontSize="25px" fontFamily="nunito" fontWeight="500" color="white" padding="0 20px">fgorgacheva@gmail.com</Text>
+              </Email>
 
-        </Contact>
+              <LinkedIn>
+                <Image width="30px" src="/images/icons/in.svg"></Image>
+                <Text fontSize="25px" fontFamily="nunito" fontWeight="500" color="white" padding="0 20px">fgorgacheva/in</Text>
+              </LinkedIn>
+            </Links>
+          </Contact>
+
+          <Boba>
+            <Image width="400px" height="" src="/images/decoration/bobacat.png"></Image>
+          </Boba>
+        </Footer>
 
       </Main >
     )
@@ -229,82 +245,130 @@ const ButtonImage = styled.img`
 
 // Contact Styles -----------------------------------------------------------
 
-const Contact = styled.div`
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-  
-  min-width: 500px;
-  width: 50%;
+// const Contact = styled.div`
+//   padding-top: 10vh;
+//   padding-bottom: 10vh;
+
+//   min-width: 500px;
+//   width: 50%;
+// `;
+
+// const ContactContainer = styled.div`
+//   display: grid;
+//   grid-template-columns: minmax(0,4fr);
+//   column-gap: 20px;
+//   grid-template-rows: minmax(0,1fr);
+//   position: relative;
+// `;
+
+// const Links = styled.div`
+//   width: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   grid-gap: 5%;
+//   flex-wrap: wrap;
+// `;
+
+// const StyledLink = styled.a`
+//   align-items: center;
+//   display: grid;
+//   grid-template-columns: minmax(0,.5fr) minmax(0,2fr);
+//   text-decoration: none;
+//   img{
+//     width: 40px;
+//     margin:0;
+//     padding: 0;
+//   }
+//   text-align: left;
+// `;
+
+// const JijiImage = styled(Image)`
+// `
+// const JijiDiv = styled.div`
+//   align-items: flex-end;
+//   justify-content: center;
+//   height: 50%;
+//   position: absolute;
+//   bottom: 0;
+//   width: 80%;
+//   display: flex;
+//   img{
+//     height: 100%;
+//     width: 100%;
+//     object-fit: contain;
+//   }
+// `
+
+// const BobaDiv = styled.div`
+//   img{
+//     width: 100%;
+//     object-fit: contain
+//   }
+// `
+
+// const InnerContactContainer = styled.div`
+//   display: grid;
+//   width: 100%;
+//   padding: 20px;
+//   grid-template-columns: minmax(0,1fr) minmax(0,150px);
+//   grid-template-rows: minmax(0,1fr);
+// `
+
+// const TextContainer = styled.div`
+//   height:100%;
+//   display: grid;
+//   grid-template-columns: minmax(0,1fr);
+//   grid-template-rows: repeat(3, minmax(0,1fr));
+
+//   img {
+//     object-fit: contain
+//   }
+// `
+
+// footer Styles -----------------------------------------------------------
+
+
+const Footer = styled.div`
+    margin-top: 10%;
+    margin-bottom: 0%;
+    padding: 10% 15% 5% 20%;
+    background-image: url("/images/footer2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 `;
 
-const ContactContainer = styled.div`
-  display: grid;
-  grid-template-columns: minmax(0,4fr);
-  column-gap: 20px;
-  grid-template-rows: minmax(0,1fr);
-  position: relative;
+const Contact = styled.div`
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+`;
+
+const Boba = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 
 const Links = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  grid-gap: 5%;
-  flex-wrap: wrap;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
 `;
 
-const StyledLink = styled.a`
-  align-items: center;
-  display: grid;
-  grid-template-columns: minmax(0,.5fr) minmax(0,2fr);
-  text-decoration: none;
-  img{
-    width: 40px;
-    margin:0;
-    padding: 0;
-  }
-  text-align: left;
+const Email = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 15fr;
+
 `;
 
-const JijiImage = styled(Image)`
-`
-const JijiDiv = styled.div`
-  align-items: flex-end;
-  justify-content: center;
-  height: 50%;
-  position: absolute;
-  bottom: 0;
-  width: 80%;
-  display: flex;
-  img{
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-  }
-`
+const LinkedIn = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 15fr;
 
-const BobaDiv = styled.div`
-  img{
-    width: 100%;
-    object-fit: contain
-  }
-`
+`;
 
-const InnerContactContainer = styled.div`
-  display: grid;
-  width: 100%;
-  padding: 20px;
-  grid-template-columns: minmax(0,1fr) minmax(0,150px);
-  grid-template-rows: minmax(0,1fr);
-`
-
-const TextContainer = styled.div`
-  height:100%;
-  display: grid;
-  grid-template-columns: minmax(0,1fr);
-  grid-template-rows: repeat(3, minmax(0,1fr));
-
-  img {
-    object-fit: contain
-  }
-`

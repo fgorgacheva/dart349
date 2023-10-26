@@ -18,8 +18,8 @@ export const HorizontalNavBar = () => {
 
   const scrollIntoView = (id: string) => {
     return (e: any) => {
-      if (pathname.toLowerCase() !== "/ux/portfolio") {
-        navigate({ pathname: '/ux/portfolio', hash: id }, { preventScrollReset: true })
+      if (pathname.toLowerCase() !== "/ux") {
+        navigate({ pathname: '/ux', hash: id }, { preventScrollReset: true })
       }
 
       const element = document.getElementById(id);

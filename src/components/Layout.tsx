@@ -54,7 +54,7 @@ const Layout = ({ }) => {
             break;
     }
 
-    const hasSideBar = pathname.toLowerCase() !== '/ux/portfolio' && !pathname.toLowerCase().includes("/ux/project/")
+    const hasSideBar = pathname.toLowerCase() !== '/ux' && !pathname.toLowerCase().includes("/ux/project/")
 
     return (<>
         {isMobile && <><MobileView><Text padding={"150px 100px 15px"} fontSize="30px"><span>Sorry :(</span></Text><Text padding={"0 100px"} fontSize="20px">The mobile version is still under construction.</Text><Text fontSize="20px" padding={"15px 100px"}> Please view it on a desktop browser for optimal experience.</Text></MobileView></>}
@@ -69,8 +69,7 @@ const Layout = ({ }) => {
                         <Route path='/home' element={<HomePage></HomePage>} ></Route>
                         <Route path='/3D' element={<ThreeDGallery></ThreeDGallery>} ></Route>
                         <Route path='/misc' element={<MiscGallery></MiscGallery>} />
-                        <Route path='/ux' element={<UXGallery></UXGallery>} ></Route>
-                        <Route path='/ux/portfolio' element={<UXPortfolio></UXPortfolio>} ></Route>
+                        <Route path='/ux' element={<UXPortfolio></UXPortfolio>} ></Route>
                         {/* <Route path='/uxportfolio' element={<UXPortfolio></UXPortfolio>} ></Route>
                     <Route path='/3dportfolio' element={<ThreeDPortfolio></ThreeDPortfolio>} ></Route> */}
                         <Route path='/:type/project/:alias' element={<Project></Project>} ></Route>

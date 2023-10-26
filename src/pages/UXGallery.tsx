@@ -22,7 +22,7 @@ class UXGallery extends React.Component<UXGalleryProps, UXGalleryState> {
                 <Main>
                     <Header>
                         <Text fontSize="30px" fontFamily="montserrat" padding="0 0 50px 0"><span>UX</span> Gallery</Text>
-                        <RoundedBox height="fit-content" width="fit-content" padding="15px" href="/ux/portfolio">
+                        <RoundedBox height="fit-content" width="fit-content" padding="15px" href="/ux">
                             <Text fontSize="15px" fontFamily="montserrat">PORTFOLIO</Text>
                         </RoundedBox>
                     </Header>
